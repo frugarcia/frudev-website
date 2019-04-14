@@ -1,0 +1,9 @@
+.contact {
+  grid-area: contact;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #0d47a1;
+  cursor: pointer;
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "link": "www.transferdez.com",
+    "short": "Sitio web corporativo de Transferdez",
+    "description": "Sitio web de presentación de la empresa TRANSFERDEZ, presentación de servicios, portfolio, formulario de contacto etc…",
+    "image": "id1.jpg"
+  },
+  {
+    "id": 2,
+    "link": "www.fermovert.com",
+    "short": "Sitio web corporativo de Fermovert",
+    "description": "Sitio web de presentación de la empresa FERMOVERT, presentación de servicios, medios, documentos de interés, formulario de contacto etc…",
+    "image": "id2.jpg"
+  },
+  {
+    "id": 3,
+    "link": "www.realesto.es",
+    "short": "Web App Inmobiliaria Realesto",
+    "description": "Proyecto web con parte pública donde se presenta un catálogo de inmuebles, con buscadores, filtros etc... y privada donde se pueden subir, editar o eliminar los inmuebles por los administradores.",
+    "image": "id3.jpg"
+  },
+  {
+    "id": 4,
+    "link": "www.coquettesevilla.com",
+    "short": "Sitio web eCommerce de moda",
+    "description": "Sitio web eCommerce de venta de ropa online para la empresa COQUETTE SEVILLA",
+    "image": "id4.jpg"
+  },
+  {
+    "id": 5,
+    "link": "www.ragrom.com",
+    "short": "Web App de gestión Ragrom",
+    "description": "Web App privado empresa",
+    "image": "id5.jpg"
+  }
+]

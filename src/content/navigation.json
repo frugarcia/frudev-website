@@ -1,0 +1,5 @@
+[
+  { "path": "/#about", "label": "Sobre mí" },
+  { "path": "/#portfolio", "label": "Portfolio" },
+  { "path": "/#contact", "label": "Contacto" }
+]
