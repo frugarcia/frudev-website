@@ -17,6 +17,7 @@ const Footer = () => {
             className="icon-github"
             href="https://github.com/frugarcia"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <figure>
               <svg
