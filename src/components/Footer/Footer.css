@@ -22,3 +22,8 @@
 .footer figure img {
   height: 100%;
 }
+
+.icon-github svg {
+  fill: white;
+  width: 100%;
+}

@@ -1,6 +1,44 @@
 .contact {
   grid-area: contact;
-  margin-bottom: 600px;
+  margin-bottom: 100px;
+}
+
+.contact .contact-form {
+  margin-top: 50px;
+}
+
+.contact .contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-form label {
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+.contact .contact-form input,
+.contact .contact-form textarea {
+  font-family: "Raleway", sans-serif;
+  border: 1px solid #0d47a1;
+  margin-bottom: 10px;
+  font-size: 1em;
+  padding: 10px;
+  outline: none;
+}
+
+.contact .contact-form button {
+  font-family: "Raleway", sans-serif;
+  margin-top: 10px;
+  border: none;
+  width: 200px;
+  display: block;
+  background-color: #0d47a1;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  padding: 10px;
 }
 
 .contact a {
