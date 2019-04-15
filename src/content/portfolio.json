@@ -33,5 +33,12 @@
     "short": "Web App de gestión Ragrom",
     "description": "Web App privado empresa",
     "image": "id5.jpg"
+  },
+  {
+    "id": 6,
+    "link": "www.andaoliva.com",
+    "short": "Sitio web corporativo de Andaoliva",
+    "description": "Sitio web de presentación de la empresa ANDAOLIVA, presentación de servicios, catálogo, formulario de contacto etc…",
+    "image": "id6.jpg"
   }
 ]

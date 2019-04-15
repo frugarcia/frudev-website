@@ -1,5 +1,6 @@
 .contact {
   grid-area: contact;
+  margin-bottom: 600px;
 }
 
 .contact a {

@@ -14,8 +14,11 @@ const About = () => {
       <p>
         Gracias por visitar mi sitio web, soy Fernando Ruiz,{" "}
         <strong>desarrollador frontend y diseñador UI/UX</strong>. Soy una
-        persona curiosa, emprendedora, creativa y apasionada por la tecnología,
-        <strong>internet, la programación y las startups</strong>.
+        persona curiosa, emprendedora, creativa y{" "}
+        <strong>
+          apasionada por la tecnología, internet, la programación y las startups
+        </strong>
+        .
       </p>
       <p>
         A lo largo de mi carrera profesional como programador (7 años), he

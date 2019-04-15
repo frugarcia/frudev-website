@@ -12,13 +12,6 @@ const PortfolioItem = ({ item }) => {
       </figure>
       <div className="portfolio-item-detail">
         <span>{item.short}</span>
-        <a
-          href="#portfolio"
-          onClick={() => false}
-          className="portfolio-detail-button"
-        >
-          Ver Mas (Proximamente)
-        </a>
       </div>
     </article>
   );

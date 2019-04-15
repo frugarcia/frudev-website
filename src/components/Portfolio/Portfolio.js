@@ -17,7 +17,7 @@ const Portfolio = () => {
       <p>
         A continuación muestro algunos de los proyectos que he llevado a cabo:
       </p>
-      <div className="portfolio-items">
+      <div className="portfolio-list">
         {portfolio.map(item => (
           <PortfolioItem key={item.id} item={item} />
         ))}

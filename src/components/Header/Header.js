@@ -1,5 +1,6 @@
 // Dependencies
 import React, { Component } from "react";
+import { Link } from "react-scroll";
 
 // Assets
 import "./Header.css";
@@ -39,19 +40,32 @@ class Header extends Component {
           id="burger-button"
         />
         <div className="container">
-          <figure>
-            <a href="/">
+          <Link
+            activeClass="active"
+            to={"app"}
+            spy={true}
+            smooth={true}
+            duration={500}
+            onClick={this.handleLink}
+          >
+            <figure>
               <img alt="logo de frudev" src={logo} />
-            </a>
-          </figure>
-
+            </figure>
+          </Link>
           <nav className={`menu ${menuActive ? "is-active" : ""}`}>
             <ul>
               {dataNavigation.map((item, idx) => (
                 <li key={idx}>
-                  <a href={item.path} onClick={this.handleLink}>
+                  <Link
+                    activeClass="active"
+                    to={item.path}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                    onClick={this.handleLink}
+                  >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
