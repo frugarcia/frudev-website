@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/About/About.module.css"],"sourcesContent":[".about {\r\n    grid-area: about;\r\n  }\r\n  \r\n  .habilities {\r\n    display: grid;\r\n    grid-template-columns: 1fr;\r\n    grid-auto-rows: auto auto auto;\r\n    grid-gap: 1em;\r\n    margin-top: 2em;\r\n  }\r\n  \r\n  .hability > span {\r\n    display: block;\r\n    border-radius: 5px;\r\n    padding: 0.5em 1em;\r\n    font-weight: 600;\r\n    background: rgba(5, 111, 255, 0.1);\r\n  }\r\n  \r\n  .subHabilities {\r\n    padding: 20px 5px 10px 0;\r\n  }\r\n  \r\n  .subHabilities li {\r\n    display: flex;\r\n    align-items: center;\r\n    padding: 0.5em;\r\n  }\r\n  \r\n  .subHabilities span {\r\n    padding-left: 1em;\r\n  }\r\n  \r\n  .subHabilities img {\r\n    height: 30px;\r\n    width: 50px;\r\n  }\r\n  \r\n  @media screen and (min-width: 1024px) {\r\n    .habilities {\r\n      grid-template-columns: auto auto auto;\r\n      grid-auto-rows: 1fr;\r\n      grid-gap: 1em;\r\n    }\r\n  }\r\n  "],"names":[],"mappings":"AAAA;;;;AAIE;;;;;;;;AAQA;;;;;;;;AAQA;;;;AAIA;;;;;;AAMA;;;;AAIA;;;;;AAKA;EACE"}}]
+}
