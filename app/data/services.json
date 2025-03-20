@@ -1,0 +1,32 @@
+[
+    {
+      "title": "Desarrollo de aplicaciones web",
+      "image": "/images/services/icon1.png",
+      "description": "Creamos sitios y aplicaciones web responsivas, seguras y escalables, adaptadas a las necesidades de tu negocio."
+    },
+    {
+      "title": "Desarrollo de API's",
+      "image": "/images/services/api.png",
+      "description": "Diseñamos e implementamos API's robustas para conectar y potenciar tus sistemas, facilitando la integración de servicios."
+    },
+    {
+      "title": "Desarrollo de Aplicaciones Móviles",
+      "image": "/images/services/movil.png",
+      "description": "Desarrollamos aplicaciones nativas y multiplataforma (iOS y Android) que ofrecen experiencias de usuario excepcionales."
+    },
+    {
+      "title": "Desarrollo de Aplicaciones de Escritorio",
+      "image": "/images/services/ordenador.png",
+      "description": "Creamos software de escritorio optimizado para mejorar la eficiencia de tus procesos internos."
+    },
+    {
+      "title": "Creación de Microservicios",
+      "image": "/images/services/servicios.png",
+      "description": "Implementamos arquitecturas basadas en microservicios para garantizar la modularidad y escalabilidad de tus sistemas."
+    },
+    {
+      "title": "Mantenimiento de Proyectos",
+      "image": "/images/services/mantenimiento.png",
+      "description": "Ofrecemos soporte continuo, actualización y mejoras en proyectos ya existentes para asegurar su óptimo rendimiento."
+    }
+  ]

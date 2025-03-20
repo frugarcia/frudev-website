@@ -10346,7 +10346,7 @@ function parseStack(stack) {
             const res = regexNextStatic.exec(url.pathname);
             if (res) {
                 var _process_env___NEXT_DIST_DIR_replace, _process_env___NEXT_DIST_DIR;
-                const distDir = (_process_env___NEXT_DIST_DIR = ("TURBOPACK compile-time value", "C:\\Users\\david\\Desktop\\2DAW\\practicaFrudev\\frudev\\.next")) == null ? void 0 : (_process_env___NEXT_DIST_DIR_replace = _process_env___NEXT_DIST_DIR.replace(/\\/g, '/')) == null ? void 0 : _process_env___NEXT_DIST_DIR_replace.replace(/\/$/, '');
+                const distDir = (_process_env___NEXT_DIST_DIR = ("TURBOPACK compile-time value", "C:\\Users\\david\\Desktop\\2DAW\\MejoraFrudev\\mejorafrudev\\.next")) == null ? void 0 : (_process_env___NEXT_DIST_DIR_replace = _process_env___NEXT_DIST_DIR.replace(/\\/g, '/')) == null ? void 0 : _process_env___NEXT_DIST_DIR_replace.replace(/\/$/, '');
                 if (distDir) {
                     frame.file = 'file://' + distDir.concat(res.pop()) + url.search;
                 }
@@ -20565,7 +20565,7 @@ const _hooksclientcontextsharedruntime = __turbopack_context__.r("[project]/node
 const _onrecoverableerror = __turbopack_context__.r("[project]/node_modules/next/dist/client/react-client-callbacks/on-recoverable-error.js [client] (ecmascript)");
 const _tracer = /*#__PURE__*/ _interop_require_default._(__turbopack_context__.r("[project]/node_modules/next/dist/client/tracing/tracer.js [client] (ecmascript)"));
 const _isnextroutererror = __turbopack_context__.r("[project]/node_modules/next/dist/client/components/is-next-router-error.js [client] (ecmascript)");
-const version = "15.2.2";
+const version = "15.2.3";
 let router;
 const emitter = (0, _mitt.default)();
 const looseToArray = (input)=>[].slice.call(input);
