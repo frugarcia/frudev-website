@@ -10,6 +10,7 @@ import { Stack } from "@/components/sections/Stack";
 import { TrustBar } from "@/components/sections/TrustBar";
 import { WhatWeBuild } from "@/components/sections/WhatWeBuild";
 import { WhyUs } from "@/components/sections/WhyUs";
+import { JsonLd } from "@/components/seo/JsonLd";
 
 export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -17,6 +18,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
 
   return (
     <>
+      <JsonLd locale={locale as Locale} />
       <Hero />
       <TrustBar />
       <Services />

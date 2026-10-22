@@ -9,6 +9,12 @@ export const siteConfig = {
   links: {
     github: "https://github.com/frugarcia",
   },
+  legal: {
+    owner: "frudev technologies",
+    taxId: "",
+    address: "",
+    updatedAt: "2026-10-22",
+  },
   stats: {
     projects: 60,
     technologies: 25,
