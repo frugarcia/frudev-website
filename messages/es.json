@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "title": "frudev technologies | Software a medida, webs y automatización",
+    "titleTemplate": "%s | frudev technologies",
+    "description": "Diseñamos y desarrollamos software de gestión a medida, webs corporativas de alto rendimiento, APIs, automatizaciones y despliegues cloud. Cuéntanos tu proyecto y te enviamos un presupuesto.",
+    "keywords": "desarrollo de software a medida, desarrollo web, Next.js, React, TypeScript, APIs, automatización, Docker, Cloud Run, ERP a medida"
+  },
+  "a11y": {
+    "skipToContent": "Saltar al contenido",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú",
+    "home": "Ir al inicio",
+    "mainNav": "Navegación principal"
+  },
+  "nav": {
+    "services": "Servicios",
+    "build": "Qué construimos",
+    "process": "Proceso",
+    "whyUs": "Por qué nosotros",
+    "stack": "Tecnología",
+    "faq": "FAQ",
+    "cta": "Pide presupuesto"
+  },
+  "language": {
+    "label": "Idioma",
+    "es": "Español",
+    "en": "English"
+  },
+  "hero": {
+    "badge": "Estudio de desarrollo de software",
+    "titleStart": "Software a medida que",
+    "titleHighlight": "hace crecer",
+    "titleEnd": "tu negocio",
+    "subtitle": "En frudev technologies diseñamos, desarrollamos y mantenemos aplicaciones de gestión, webs corporativas, APIs y automatizaciones con tecnología moderna, rápida y fácil de mantener.",
+    "ctaPrimary": "Pide tu presupuesto",
+    "ctaSecondary": "Ver servicios",
+    "highlights": [
+      "Respuesta en menos de 24 h",
+      "Presupuesto cerrado y sin compromiso",
+      "Código tuyo desde el primer día"
+    ]
+  },
+  "trust": {
+    "years": "años desarrollando software",
+    "projects": "proyectos entregados",
+    "technologies": "tecnologías en producción",
+    "satisfaction": "código propiedad del cliente"
+  },
+  "services": {
+    "eyebrow": "Servicios",
+    "title": "Todo lo que necesitas para digitalizar tu empresa",
+    "subtitle": "Nos encargamos del ciclo completo: análisis, diseño, desarrollo, despliegue y evolución. Un único equipo, sin intermediarios.",
+    "items": {
+      "management": {
+        "title": "Software de gestión a medida",
+        "description": "ERP, back-office y paneles internos adaptados a tus procesos, no al revés.",
+        "features": [
+          "Usuarios, roles y permisos",
+          "Gestión documental y flujos de trabajo",
+          "Informes y cuadros de mando"
+        ]
+      },
+      "web": {
+        "title": "Webs corporativas de alto rendimiento",
+        "description": "Sitios rápidos, accesibles y optimizados para SEO que convierten visitas en clientes.",
+        "features": [
+          "Next.js y renderizado en servidor",
+          "Multidioma y SEO técnico",
+          "Animaciones y diseño a medida"
+        ]
+      },
+      "apis": {
+        "title": "APIs, integraciones y microservicios",
+        "description": "Conectamos tus sistemas, servicios de terceros y aplicaciones con APIs seguras y documentadas.",
+        "features": [
+          "APIs REST con Node.js",
+          "Integración con CMS, pagos y autenticación",
+          "Arquitecturas modulares y escalables"
+        ]
+      },
+      "automation": {
+        "title": "Automatización y extracción de datos",
+        "description": "Eliminamos tareas repetitivas y convertimos información dispersa en datos útiles.",
+        "features": [
+          "Scraping y parsing de fuentes web",
+          "Transformación y normalización de datos",
+          "Tareas programadas y procesos batch"
+        ]
+      },
+      "cloud": {
+        "title": "Cloud y DevOps",
+        "description": "Despliegues fiables y reproducibles para que tu aplicación esté siempre disponible.",
+        "features": [
+          "Contenedores Docker y Nginx",
+          "Google Cloud Run y Vercel",
+          "CI/CD y entornos por configuración"
+        ]
+      },
+      "maintenance": {
+        "title": "Mantenimiento, evolución y documentación",
+        "description": "Cuidamos tu producto después del lanzamiento: mejoras, actualizaciones y soporte.",
+        "features": [
+          "Actualización de dependencias y seguridad",
+          "Nuevas funcionalidades por iteraciones",
+          "Manuales técnicos y de usuario"
+        ]
+      }
+    }
+  },
+  "build": {
+    "eyebrow": "Qué construimos",
+    "title": "Piezas probadas que aceleran tu proyecto",
+    "subtitle": "Partimos de patrones que ya hemos llevado a producción muchas veces, así invertimos tu presupuesto en lo que hace único a tu negocio.",
+    "items": {
+      "dashboards": {
+        "title": "Paneles de control",
+        "description": "Métricas clave, actividad reciente y accesos rápidos en una sola pantalla."
+      },
+      "documents": {
+        "title": "Gestión documental",
+        "description": "Alta, detalle, estados y listados de documentos con trazabilidad completa."
+      },
+      "auth": {
+        "title": "Autenticación segura",
+        "description": "Inicio de sesión, recuperación de contraseña, roles e inicio con Google."
+      },
+      "tables": {
+        "title": "Tablas de datos",
+        "description": "Filtros, búsqueda, ordenación y paginación para miles de registros."
+      },
+      "automation": {
+        "title": "Automatizaciones",
+        "description": "Procesos que se ejecutan solos y te avisan cuando algo requiere atención."
+      }
+    },
+    "mock": {
+      "revenue": "Facturación",
+      "orders": "Pedidos",
+      "users": "Usuarios",
+      "search": "Buscar…",
+      "email": "Email",
+      "password": "Contraseña",
+      "signIn": "Entrar",
+      "google": "Continuar con Google",
+      "draft": "Borrador",
+      "review": "En revisión",
+      "approved": "Aprobado",
+      "trigger": "Cada día 07:00",
+      "extract": "Extraer datos",
+      "transform": "Transformar",
+      "notify": "Notificar"
+    }
+  },
+  "process": {
+    "eyebrow": "Proceso",
+    "title": "Un método claro, sin sorpresas",
+    "subtitle": "Sabrás en todo momento qué estamos haciendo, cuándo lo entregamos y cuánto cuesta.",
+    "steps": [
+      {
+        "title": "Descubrimiento",
+        "description": "Entendemos tu negocio, tus objetivos y tus usuarios. Definimos alcance y prioridades.",
+        "duration": "1 semana"
+      },
+      {
+        "title": "Diseño",
+        "description": "Prototipos navegables y arquitectura técnica validados contigo antes de programar.",
+        "duration": "1-2 semanas"
+      },
+      {
+        "title": "Desarrollo",
+        "description": "Entregas iterativas cada dos semanas con un entorno de pruebas siempre disponible.",
+        "duration": "Por sprints"
+      },
+      {
+        "title": "Lanzamiento",
+        "description": "Despliegue en producción, monitorización, formación y documentación.",
+        "duration": "1 semana"
+      },
+      {
+        "title": "Soporte",
+        "description": "Mantenimiento, mejoras continuas y acompañamiento a medida que creces.",
+        "duration": "Continuo"
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Por qué frudev technologies",
+    "title": "Tecnología actual, trato cercano",
+    "subtitle": "Llevamos más de una década construyendo software y actualizándonos con cada nueva generación de herramientas.",
+    "items": [
+      {
+        "title": "Tecnología actual y mantenible",
+        "description": "Hemos evolucionado de React 16 a React 19 y Tailwind 4. Usamos herramientas modernas con soporte a largo plazo."
+      },
+      {
+        "title": "Comunicación directa",
+        "description": "Hablas con quien desarrolla tu proyecto. Sin intermediarios ni teléfonos rotos."
+      },
+      {
+        "title": "Presupuesto transparente",
+        "description": "Precio cerrado por fases o bolsa de horas. Sabes lo que pagas antes de empezar."
+      },
+      {
+        "title": "Rendimiento y SEO",
+        "description": "Webs rápidas que puntúan alto en Core Web Vitals y se posicionan mejor."
+      },
+      {
+        "title": "Seguridad por defecto",
+        "description": "Validación en cliente y servidor, autenticación robusta y buenas prácticas OWASP."
+      },
+      {
+        "title": "El código es tuyo",
+        "description": "Repositorio, documentación y despliegue a tu nombre. Sin dependencias forzadas."
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Tecnología",
+    "title": "Un stack probado en producción",
+    "subtitle": "Elegimos cada herramienta por su madurez, su comunidad y lo fácil que será mantenerla dentro de cinco años.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud y DevOps",
+      "data": "Datos y automatización"
+    },
+    "dataItems": [
+      "Scraping",
+      "Parsing HTML",
+      "ETL a JSON",
+      "Tareas programadas"
+    ]
+  },
+  "faq": {
+    "eyebrow": "Preguntas frecuentes",
+    "title": "Resolvemos tus dudas",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta un proyecto?",
+        "a": "Depende del alcance, las integraciones y los plazos. Tras una primera llamada sin coste te enviamos un presupuesto cerrado y desglosado por fases, para que sepas exactamente qué incluye cada parte antes de empezar."
+      },
+      {
+        "q": "¿Cuánto se tarda en tenerlo listo?",
+        "a": "Una web corporativa se entrega en 3 a 6 semanas. Una aplicación a medida, en 2 a 4 meses para la primera versión, con entregas parciales cada dos semanas para que veas el avance desde el principio."
+      },
+      {
+        "q": "¿Ofrecéis mantenimiento después del lanzamiento?",
+        "a": "Sí. Ofrecemos planes de mantenimiento mensuales que incluyen actualizaciones de seguridad, copias de seguridad, monitorización y una bolsa de horas para mejoras."
+      },
+      {
+        "q": "¿Podéis continuar un proyecto que ya existe?",
+        "a": "Sí. Auditamos el código actual, te proponemos un plan de mejora y lo evolucionamos o lo migramos a tecnologías actuales de forma progresiva."
+      },
+      {
+        "q": "¿De quién es el código?",
+        "a": "Tuyo. Al finalizar cada fase te entregamos el código fuente, la documentación y los accesos a la infraestructura."
+      },
+      {
+        "q": "¿Trabajáis con clientes fuera de España?",
+        "a": "Sí. Trabajamos en remoto en español e inglés con empresas de cualquier país."
+      }
+    ]
+  },
+  "cta": {
+    "afterServices": {
+      "title": "¿Tienes un proyecto en mente?",
+      "subtitle": "Cuéntanoslo en 2 minutos y te respondemos en menos de 24 horas.",
+      "button": "Pide presupuesto"
+    },
+    "afterProcess": {
+      "title": "Empecemos por la primera fase",
+      "subtitle": "Una llamada de descubrimiento sin coste para entender lo que necesitas.",
+      "button": "Quiero empezar"
+    }
+  },
+  "quote": {
+    "eyebrow": "Presupuesto",
+    "title": "Cuéntanos tu proyecto",
+    "subtitle": "Tres pasos rápidos. Te responderemos con una propuesta y un presupuesto sin compromiso.",
+    "stepLabel": "Paso {current} de {total}",
+    "steps": {
+      "type": "Tipo de proyecto",
+      "scope": "Presupuesto y plazo",
+      "contact": "Tus datos"
+    },
+    "typeQuestion": "¿Qué necesitas?",
+    "types": {
+      "management": "Software de gestión",
+      "web": "Web corporativa",
+      "apis": "API o integración",
+      "automation": "Automatización",
+      "cloud": "Cloud y DevOps",
+      "maintenance": "Mantenimiento",
+      "other": "Otro"
+    },
+    "budgetQuestion": "Presupuesto aproximado",
+    "budgets": {
+      "lt3k": "Menos de 3.000 €",
+      "3to10k": "3.000 - 10.000 €",
+      "10to25k": "10.000 - 25.000 €",
+      "gt25k": "Más de 25.000 €",
+      "unknown": "Aún no lo sé"
+    },
+    "timelineQuestion": "¿Para cuándo lo necesitas?",
+    "timelines": {
+      "asap": "Lo antes posible",
+      "1to3m": "En 1-3 meses",
+      "3to6m": "En 3-6 meses",
+      "flexible": "Sin prisa"
+    },
+    "fields": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@empresa.com",
+      "company": "Empresa",
+      "companyPlaceholder": "Opcional",
+      "phone": "Teléfono",
+      "phonePlaceholder": "Opcional",
+      "message": "Cuéntanos un poco más",
+      "messagePlaceholder": "Qué quieres conseguir, qué tienes ahora, plazos importantes…",
+      "privacy": "He leído y acepto la <link>política de privacidad</link>.",
+      "website": "Deja este campo vacío"
+    },
+    "errors": {
+      "projectType": "Selecciona al menos un tipo de proyecto.",
+      "budget": "Selecciona un rango de presupuesto.",
+      "timeline": "Selecciona un plazo.",
+      "name": "Introduce tu nombre.",
+      "email": "Introduce un email válido.",
+      "phone": "Introduce un teléfono válido.",
+      "message": "Cuéntanos al menos un poco (20 caracteres).",
+      "privacy": "Debes aceptar la política de privacidad.",
+      "generic": "No hemos podido enviar tu solicitud. Inténtalo de nuevo o escríbenos directamente."
+    },
+    "buttons": {
+      "next": "Siguiente",
+      "back": "Atrás",
+      "submit": "Enviar solicitud",
+      "sending": "Enviando…",
+      "again": "Enviar otra solicitud"
+    },
+    "success": {
+      "title": "¡Solicitud recibida!",
+      "description": "Gracias, {name}. Hemos recibido tu proyecto y te escribiremos en menos de 24 horas laborables."
+    }
+  },
+  "email": {
+    "subject": "Nueva solicitud de presupuesto de {name}",
+    "confirmationSubject": "Hemos recibido tu solicitud | frudev technologies",
+    "confirmationGreeting": "Hola {name},",
+    "confirmationBody": "Gracias por contarnos tu proyecto. Lo estamos revisando y te responderemos en menos de 24 horas laborables con los siguientes pasos.",
+    "confirmationSummary": "Resumen de tu solicitud",
+    "confirmationSignature": "El equipo de frudev technologies"
+  },
+  "footer": {
+    "tagline": "Software a medida, webs y automatización con tecnología actual.",
+    "navigation": "Navegación",
+    "legal": "Legal",
+    "contact": "Contacto",
+    "contactCta": "Pide presupuesto",
+    "rights": "© {year} frudev technologies. Todos los derechos reservados.",
+    "madeWith": "Hecho con Next.js y mucho café."
+  },
+  "legal": {
+    "back": "Volver al inicio",
+    "updated": "Última actualización: {date}",
+    "notice": {
+      "title": "Aviso legal",
+      "sections": [
+        {
+          "heading": "Titular del sitio web",
+          "body": "En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de {owner}{taxId}{address}. Puedes contactar con nosotros a través del formulario de presupuesto{email}."
+        },
+        {
+          "heading": "Objeto",
+          "body": "Este sitio web tiene como finalidad informar sobre los servicios de desarrollo de software, diseño web, integración de sistemas, automatización y consultoría tecnológica que presta {owner}, así como facilitar la solicitud de presupuestos."
+        },
+        {
+          "heading": "Propiedad intelectual e industrial",
+          "body": "Los contenidos, diseño, logotipos y código fuente de este sitio web son propiedad de {owner} o se utilizan con licencia. Queda prohibida su reproducción, distribución o transformación sin autorización expresa."
+        },
+        {
+          "heading": "Responsabilidad",
+          "body": "{owner} no se hace responsable del uso indebido de los contenidos del sitio ni de los daños derivados de interrupciones técnicas ajenas a su control. Los enlaces a sitios de terceros se facilitan a título informativo."
+        },
+        {
+          "heading": "Legislación aplicable",
+          "body": "Las presentes condiciones se rigen por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales que correspondan conforme a derecho."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Política de privacidad",
+      "sections": [
+        {
+          "heading": "Responsable del tratamiento",
+          "body": "El responsable del tratamiento de tus datos es {owner}{email}."
+        },
+        {
+          "heading": "Qué datos tratamos y para qué",
+          "body": "Tratamos los datos que nos facilitas en el formulario de presupuesto (nombre, email, empresa, teléfono y descripción del proyecto) con la única finalidad de responder a tu solicitud y, en su caso, preparar y enviarte una propuesta comercial."
+        },
+        {
+          "heading": "Base legal",
+          "body": "La base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD)."
+        },
+        {
+          "heading": "Conservación",
+          "body": "Conservaremos tus datos durante el tiempo necesario para atender tu solicitud y, si llegamos a colaborar, durante la relación contractual y los plazos legales aplicables."
+        },
+        {
+          "heading": "Destinatarios",
+          "body": "No cedemos tus datos a terceros salvo obligación legal. Para el envío de emails utilizamos un proveedor (Resend) que actúa como encargado del tratamiento con garantías adecuadas."
+        },
+        {
+          "heading": "Tus derechos",
+          "body": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiéndonos. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Política de cookies",
+      "sections": [
+        {
+          "heading": "Qué cookies utilizamos",
+          "body": "Este sitio web solo utiliza cookies técnicas imprescindibles para su funcionamiento, como la que recuerda el idioma que has elegido (NEXT_LOCALE). No utilizamos cookies de análisis, publicidad ni seguimiento de terceros."
+        },
+        {
+          "heading": "Base legal",
+          "body": "Las cookies técnicas están exentas de consentimiento conforme al artículo 22.2 de la LSSI-CE, ya que son estrictamente necesarias para prestar el servicio que solicitas."
+        },
+        {
+          "heading": "Cómo desactivarlas",
+          "body": "Puedes eliminar o bloquear las cookies desde la configuración de tu navegador. Si lo haces, es posible que el sitio no recuerde tu preferencia de idioma."
+        },
+        {
+          "heading": "Cambios en esta política",
+          "body": "Si en el futuro incorporamos otro tipo de cookies, actualizaremos esta política y solicitaremos tu consentimiento cuando sea necesario."
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o se ha movido.",
+    "back": "Volver al inicio"
+  }
+}

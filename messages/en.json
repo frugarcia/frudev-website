@@ -1,0 +1,449 @@
+{
+  "meta": {
+    "title": "frudev technologies | Custom software, websites and automation",
+    "titleTemplate": "%s | frudev technologies",
+    "description": "We design and build custom business software, high-performance corporate websites, APIs, automations and cloud deployments. Tell us about your project and get a quote.",
+    "keywords": "custom software development, web development, Next.js, React, TypeScript, APIs, automation, Docker, Cloud Run, custom ERP"
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "home": "Go to home page",
+    "mainNav": "Main navigation"
+  },
+  "nav": {
+    "services": "Services",
+    "build": "What we build",
+    "process": "Process",
+    "whyUs": "Why us",
+    "stack": "Technology",
+    "faq": "FAQ",
+    "cta": "Get a quote"
+  },
+  "language": {
+    "label": "Language",
+    "es": "Español",
+    "en": "English"
+  },
+  "hero": {
+    "badge": "Software development studio",
+    "titleStart": "Custom software that",
+    "titleHighlight": "grows",
+    "titleEnd": "your business",
+    "subtitle": "At frudev technologies we design, build and maintain business applications, corporate websites, APIs and automations using modern, fast and maintainable technology.",
+    "ctaPrimary": "Get your quote",
+    "ctaSecondary": "See services",
+    "highlights": [
+      "Reply in under 24 h",
+      "Fixed, no-obligation quote",
+      "You own the code from day one"
+    ]
+  },
+  "trust": {
+    "years": "years building software",
+    "projects": "projects delivered",
+    "technologies": "technologies in production",
+    "satisfaction": "code owned by the client"
+  },
+  "services": {
+    "eyebrow": "Services",
+    "title": "Everything you need to digitise your company",
+    "subtitle": "We handle the full cycle: analysis, design, development, deployment and evolution. One team, no middlemen.",
+    "items": {
+      "management": {
+        "title": "Custom business software",
+        "description": "ERP, back-office and internal dashboards shaped around your processes, not the other way round.",
+        "features": [
+          "Users, roles and permissions",
+          "Document management and workflows",
+          "Reports and dashboards"
+        ]
+      },
+      "web": {
+        "title": "High-performance corporate websites",
+        "description": "Fast, accessible, SEO-optimised sites that turn visitors into customers.",
+        "features": [
+          "Next.js and server rendering",
+          "Multilingual and technical SEO",
+          "Custom design and animation"
+        ]
+      },
+      "apis": {
+        "title": "APIs, integrations and microservices",
+        "description": "We connect your systems, third-party services and apps with secure, documented APIs.",
+        "features": [
+          "REST APIs with Node.js",
+          "CMS, payments and auth integrations",
+          "Modular, scalable architectures"
+        ]
+      },
+      "automation": {
+        "title": "Automation and data extraction",
+        "description": "We remove repetitive work and turn scattered information into useful data.",
+        "features": [
+          "Web scraping and parsing",
+          "Data transformation and normalisation",
+          "Scheduled jobs and batch processes"
+        ]
+      },
+      "cloud": {
+        "title": "Cloud and DevOps",
+        "description": "Reliable, reproducible deployments so your application is always available.",
+        "features": [
+          "Docker containers and Nginx",
+          "Google Cloud Run and Vercel",
+          "CI/CD and config-driven environments"
+        ]
+      },
+      "maintenance": {
+        "title": "Maintenance, evolution and documentation",
+        "description": "We look after your product after launch: improvements, updates and support.",
+        "features": [
+          "Dependency and security updates",
+          "Iterative new features",
+          "Technical and user manuals"
+        ]
+      }
+    }
+  },
+  "build": {
+    "eyebrow": "What we build",
+    "title": "Proven building blocks that speed up your project",
+    "subtitle": "We start from patterns we have shipped to production many times, so your budget goes into what makes your business unique.",
+    "items": {
+      "dashboards": {
+        "title": "Dashboards",
+        "description": "Key metrics, recent activity and shortcuts on a single screen."
+      },
+      "documents": {
+        "title": "Document management",
+        "description": "Create, review, track status and list documents with full traceability."
+      },
+      "auth": {
+        "title": "Secure authentication",
+        "description": "Sign-in, password recovery, roles and Google sign-in."
+      },
+      "tables": {
+        "title": "Data tables",
+        "description": "Filtering, search, sorting and pagination for thousands of records."
+      },
+      "automation": {
+        "title": "Automations",
+        "description": "Processes that run on their own and alert you when something needs attention."
+      }
+    },
+    "mock": {
+      "revenue": "Revenue",
+      "orders": "Orders",
+      "users": "Users",
+      "search": "Search…",
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign in",
+      "google": "Continue with Google",
+      "draft": "Draft",
+      "review": "In review",
+      "approved": "Approved",
+      "trigger": "Daily at 07:00",
+      "extract": "Extract data",
+      "transform": "Transform",
+      "notify": "Notify"
+    }
+  },
+  "process": {
+    "eyebrow": "Process",
+    "title": "A clear method, no surprises",
+    "subtitle": "You will always know what we are working on, when it ships and what it costs.",
+    "steps": [
+      {
+        "title": "Discovery",
+        "description": "We learn about your business, goals and users. We define scope and priorities.",
+        "duration": "1 week"
+      },
+      {
+        "title": "Design",
+        "description": "Clickable prototypes and technical architecture validated with you before coding.",
+        "duration": "1-2 weeks"
+      },
+      {
+        "title": "Development",
+        "description": "Iterative deliveries every two weeks with an always-on staging environment.",
+        "duration": "In sprints"
+      },
+      {
+        "title": "Launch",
+        "description": "Production deployment, monitoring, training and documentation.",
+        "duration": "1 week"
+      },
+      {
+        "title": "Support",
+        "description": "Maintenance, continuous improvement and guidance as you grow.",
+        "duration": "Ongoing"
+      }
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why frudev technologies",
+    "title": "Modern technology, personal service",
+    "subtitle": "We have been building software for over a decade, keeping up with every new generation of tools.",
+    "items": [
+      {
+        "title": "Modern, maintainable technology",
+        "description": "We moved from React 16 to React 19 and Tailwind 4. We use modern tools with long-term support."
+      },
+      {
+        "title": "Direct communication",
+        "description": "You talk to the people building your project. No middlemen, no broken telephone."
+      },
+      {
+        "title": "Transparent pricing",
+        "description": "Fixed price per phase or a block of hours. You know what you pay before we start."
+      },
+      {
+        "title": "Performance and SEO",
+        "description": "Fast websites that score high on Core Web Vitals and rank better."
+      },
+      {
+        "title": "Secure by default",
+        "description": "Client and server validation, robust authentication and OWASP best practices."
+      },
+      {
+        "title": "You own the code",
+        "description": "Repository, documentation and deployment in your name. No lock-in."
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Technology",
+    "title": "A production-proven stack",
+    "subtitle": "We pick every tool for its maturity, its community and how easy it will be to maintain five years from now.",
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "cloud": "Cloud and DevOps",
+      "data": "Data and automation"
+    },
+    "dataItems": [
+      "Scraping",
+      "HTML parsing",
+      "ETL to JSON",
+      "Scheduled jobs"
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Your questions, answered",
+    "items": [
+      {
+        "q": "How much does a project cost?",
+        "a": "It depends on scope, integrations and timeline. After a free first call we send you a fixed quote broken down by phase, so you know exactly what each part includes before we start."
+      },
+      {
+        "q": "How long does it take?",
+        "a": "A corporate website usually ships in 3 to 6 weeks. A custom application takes 2 to 4 months for the first version, with partial deliveries every two weeks so you see progress from the start."
+      },
+      {
+        "q": "Do you offer maintenance after launch?",
+        "a": "Yes. Our monthly maintenance plans include security updates, backups, monitoring and a block of hours for improvements."
+      },
+      {
+        "q": "Can you take over an existing project?",
+        "a": "Yes. We audit the current code, propose an improvement plan and evolve it or migrate it to modern technology step by step."
+      },
+      {
+        "q": "Who owns the code?",
+        "a": "You do. At the end of each phase we hand over the source code, documentation and infrastructure access."
+      },
+      {
+        "q": "Do you work with clients outside Spain?",
+        "a": "Yes. We work remotely in Spanish and English with companies anywhere in the world."
+      }
+    ]
+  },
+  "cta": {
+    "afterServices": {
+      "title": "Have a project in mind?",
+      "subtitle": "Tell us about it in 2 minutes and we will reply within 24 hours.",
+      "button": "Get a quote"
+    },
+    "afterProcess": {
+      "title": "Let's start with phase one",
+      "subtitle": "A free discovery call to understand what you need.",
+      "button": "I want to start"
+    }
+  },
+  "quote": {
+    "eyebrow": "Quote",
+    "title": "Tell us about your project",
+    "subtitle": "Three quick steps. We will reply with a proposal and a no-obligation quote.",
+    "stepLabel": "Step {current} of {total}",
+    "steps": {
+      "type": "Project type",
+      "scope": "Budget and timeline",
+      "contact": "Your details"
+    },
+    "typeQuestion": "What do you need?",
+    "types": {
+      "management": "Business software",
+      "web": "Corporate website",
+      "apis": "API or integration",
+      "automation": "Automation",
+      "cloud": "Cloud and DevOps",
+      "maintenance": "Maintenance",
+      "other": "Other"
+    },
+    "budgetQuestion": "Approximate budget",
+    "budgets": {
+      "lt3k": "Under €3,000",
+      "3to10k": "€3,000 - €10,000",
+      "10to25k": "€10,000 - €25,000",
+      "gt25k": "Over €25,000",
+      "unknown": "Not sure yet"
+    },
+    "timelineQuestion": "When do you need it?",
+    "timelines": {
+      "asap": "As soon as possible",
+      "1to3m": "In 1-3 months",
+      "3to6m": "In 3-6 months",
+      "flexible": "No rush"
+    },
+    "fields": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@company.com",
+      "company": "Company",
+      "companyPlaceholder": "Optional",
+      "phone": "Phone",
+      "phonePlaceholder": "Optional",
+      "message": "Tell us a bit more",
+      "messagePlaceholder": "What you want to achieve, what you have today, key dates…",
+      "privacy": "I have read and accept the <link>privacy policy</link>.",
+      "website": "Leave this field empty"
+    },
+    "errors": {
+      "projectType": "Select at least one project type.",
+      "budget": "Select a budget range.",
+      "timeline": "Select a timeline.",
+      "name": "Enter your name.",
+      "email": "Enter a valid email.",
+      "phone": "Enter a valid phone number.",
+      "message": "Tell us at least a little (20 characters).",
+      "privacy": "You must accept the privacy policy.",
+      "generic": "We could not send your request. Please try again or write to us directly."
+    },
+    "buttons": {
+      "next": "Next",
+      "back": "Back",
+      "submit": "Send request",
+      "sending": "Sending…",
+      "again": "Send another request"
+    },
+    "success": {
+      "title": "Request received!",
+      "description": "Thanks, {name}. We have received your project and will get back to you within 24 business hours."
+    }
+  },
+  "email": {
+    "subject": "New quote request from {name}",
+    "confirmationSubject": "We have received your request | frudev technologies",
+    "confirmationGreeting": "Hi {name},",
+    "confirmationBody": "Thanks for telling us about your project. We are reviewing it and will reply within 24 business hours with the next steps.",
+    "confirmationSummary": "Your request summary",
+    "confirmationSignature": "The frudev technologies team"
+  },
+  "footer": {
+    "tagline": "Custom software, websites and automation built with modern technology.",
+    "navigation": "Navigation",
+    "legal": "Legal",
+    "contact": "Contact",
+    "contactCta": "Get a quote",
+    "rights": "© {year} frudev technologies. All rights reserved.",
+    "madeWith": "Built with Next.js and plenty of coffee."
+  },
+  "legal": {
+    "back": "Back to home",
+    "updated": "Last updated: {date}",
+    "notice": {
+      "title": "Legal notice",
+      "sections": [
+        {
+          "heading": "Website owner",
+          "body": "In accordance with Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), this website is owned by {owner}{taxId}{address}. You can contact us through the quote form{email}."
+        },
+        {
+          "heading": "Purpose",
+          "body": "This website provides information about the software development, web design, systems integration, automation and technology consulting services offered by {owner}, and allows visitors to request quotes."
+        },
+        {
+          "heading": "Intellectual and industrial property",
+          "body": "The content, design, logos and source code of this website are owned by {owner} or used under licence. Reproduction, distribution or transformation without express permission is prohibited."
+        },
+        {
+          "heading": "Liability",
+          "body": "{owner} is not liable for misuse of the site content or for damages caused by technical interruptions beyond its control. Links to third-party sites are provided for information only."
+        },
+        {
+          "heading": "Governing law",
+          "body": "These terms are governed by Spanish law. Any dispute shall be submitted to the competent courts in accordance with the law."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "heading": "Data controller",
+          "body": "The controller of your personal data is {owner}{email}."
+        },
+        {
+          "heading": "What data we process and why",
+          "body": "We process the data you provide in the quote form (name, email, company, phone and project description) solely to answer your request and, where applicable, to prepare and send you a commercial proposal."
+        },
+        {
+          "heading": "Legal basis",
+          "body": "The legal basis is your consent, given by ticking the acceptance box, and taking pre-contractual steps at your request (Art. 6.1.a and 6.1.b GDPR)."
+        },
+        {
+          "heading": "Retention",
+          "body": "We keep your data for as long as needed to handle your request and, if we work together, for the duration of the contract and applicable legal periods."
+        },
+        {
+          "heading": "Recipients",
+          "body": "We do not share your data with third parties unless legally required. We use an email provider (Resend) that acts as a data processor with appropriate safeguards."
+        },
+        {
+          "heading": "Your rights",
+          "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to us. You may also lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie policy",
+      "sections": [
+        {
+          "heading": "Which cookies we use",
+          "body": "This website only uses strictly necessary technical cookies, such as the one that remembers your chosen language (NEXT_LOCALE). We do not use analytics, advertising or third-party tracking cookies."
+        },
+        {
+          "heading": "Legal basis",
+          "body": "Technical cookies are exempt from consent under Article 22.2 of the LSSI-CE because they are strictly necessary to provide the service you request."
+        },
+        {
+          "heading": "How to disable them",
+          "body": "You can delete or block cookies in your browser settings. If you do, the site may not remember your language preference."
+        },
+        {
+          "heading": "Changes to this policy",
+          "body": "If we add other types of cookies in the future, we will update this policy and ask for your consent where required."
+        }
+      ]
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you are looking for does not exist or has moved.",
+    "back": "Back to home"
+  }
+}
