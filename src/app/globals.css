@@ -76,7 +76,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background font-sans text-foreground antialiased;
     text-rendering: optimizeLegibility;
   }
 
@@ -85,7 +85,7 @@
   }
 
   :focus-visible {
-    @apply outline-accent outline-2 outline-offset-2;
+    @apply outline-2 outline-offset-2 outline-accent;
   }
 
   @media (prefers-reduced-motion: reduce) {

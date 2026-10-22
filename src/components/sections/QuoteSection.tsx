@@ -15,9 +15,9 @@ export async function QuoteSection() {
     <Section id={SECTION_IDS.quote} aria-labelledby="quote-title" className="isolate">
       <div
         aria-hidden
-        className="bg-accent/10 absolute bottom-0 left-1/2 -z-10 size-160 -translate-x-1/2 rounded-full blur-3xl"
+        className="absolute bottom-0 left-1/2 -z-10 size-160 -translate-x-1/2 rounded-full bg-accent/10 blur-3xl"
       />
-      <div className="grid gap-10 lg:grid-cols-12 lg:gap-14">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-14">
         <div className="flex flex-col gap-8 lg:col-span-5 lg:pt-4">
           <SectionHeading
             id="quote-title"
@@ -31,8 +31,11 @@ export async function QuoteSection() {
               {highlights.map((item, index) => {
                 const Icon = icons[index % icons.length] ?? Clock;
                 return (
-                  <li key={item} className="text-foreground/90 flex items-center gap-3 text-sm sm:text-base">
-                    <span className="border-border bg-surface text-accent flex size-10 shrink-0 items-center justify-center rounded-xl border">
+                  <li
+                    key={item}
+                    className="flex items-center gap-3 text-sm text-foreground/90 sm:text-base"
+                  >
+                    <span className="flex size-10 shrink-0 items-center justify-center rounded-xl border border-border bg-surface text-accent">
                       <Icon aria-hidden className="size-4" />
                     </span>
                     {item}
@@ -43,10 +46,10 @@ export async function QuoteSection() {
           </Reveal>
         </div>
         <Reveal delay={0.15} className="lg:col-span-7">
-          <div className="border-border bg-surface/90 relative rounded-2xl border shadow-2xl shadow-black/40 backdrop-blur">
+          <div className="relative rounded-2xl border border-border bg-surface/90 shadow-2xl shadow-black/40 backdrop-blur">
             <div
               aria-hidden
-              className="via-accent/60 absolute inset-x-8 -top-px h-px bg-linear-to-r from-transparent to-transparent"
+              className="absolute inset-x-8 -top-px h-px bg-linear-to-r from-transparent via-accent/60 to-transparent"
             />
             <QuoteForm />
           </div>

@@ -10,8 +10,7 @@ import { quoteSchema, type QuoteData } from "@/lib/schemas";
 import { escapeHtml } from "@/lib/utils";
 
 export type SendQuoteResult =
-  | { ok: true; mocked?: boolean }
-  | { ok: false; error: "validation" | "rate_limited" | "server" };
+  { ok: true; mocked?: boolean } | { ok: false; error: "validation" | "rate_limited" | "server" };
 
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
 const RATE_LIMIT_MAX = 5;
@@ -65,7 +64,9 @@ async function buildEmails(data: QuoteData, locale: Locale) {
 }
 
 export async function sendQuote(input: unknown, localeInput: string): Promise<SendQuoteResult> {
-  const locale: Locale = hasLocale(routing.locales, localeInput) ? localeInput : routing.defaultLocale;
+  const locale: Locale = hasLocale(routing.locales, localeInput)
+    ? localeInput
+    : routing.defaultLocale;
   const parsed = quoteSchema.safeParse(input);
   if (!parsed.success) return { ok: false, error: "validation" };
 

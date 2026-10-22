@@ -224,12 +224,7 @@
       "cloud": "Cloud y DevOps",
       "data": "Datos y automatización"
     },
-    "dataItems": [
-      "Scraping",
-      "Parsing HTML",
-      "ETL a JSON",
-      "Tareas programadas"
-    ]
+    "dataItems": ["Scraping", "Parsing HTML", "ETL a JSON", "Tareas programadas"]
   },
   "faq": {
     "eyebrow": "Preguntas frecuentes",

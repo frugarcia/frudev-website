@@ -12,7 +12,11 @@ import { buildAlternates } from "@/lib/seo";
 import "../globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const viewport: Viewport = {
   themeColor: "#05070b",
@@ -82,7 +86,7 @@ export default async function LocaleLayout({
           <SmoothScroll>
             <a
               href="#main"
-              className="bg-accent text-accent-foreground sr-only z-100 rounded-full px-4 py-2 focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
+              className="sr-only z-100 rounded-full bg-accent px-4 py-2 text-accent-foreground focus:not-sr-only focus:fixed focus:top-3 focus:left-3"
             >
               {t("skipToContent")}
             </a>

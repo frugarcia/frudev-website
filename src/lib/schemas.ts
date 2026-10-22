@@ -15,14 +15,7 @@ export const BUDGETS = ["lt3k", "3to10k", "10to25k", "gt25k", "unknown"] as cons
 export const TIMELINES = ["asap", "1to3m", "3to6m", "flexible"] as const;
 
 export type QuoteErrorKey =
-  | "projectType"
-  | "budget"
-  | "timeline"
-  | "name"
-  | "email"
-  | "phone"
-  | "message"
-  | "privacy";
+  "projectType" | "budget" | "timeline" | "name" | "email" | "phone" | "message" | "privacy";
 
 const optionalText = (max: number) => z.string().trim().max(max).optional().or(z.literal(""));
 

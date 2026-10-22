@@ -26,7 +26,7 @@ export async function Services() {
         title={t("title")}
         subtitle={t("subtitle")}
       />
-      <Stagger className="mt-14 grid gap-4 sm:mt-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+      <Stagger className="mt-14 grid grid-cols-1 gap-4 sm:mt-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
         {SERVICES.map(({ key, Icon }) => {
           const features = t.raw(`items.${key}.features`) as string[];
           return (
@@ -34,21 +34,23 @@ export async function Services() {
               <Card className="group flex h-full flex-col gap-5">
                 <div
                   aria-hidden
-                  className="bg-accent/10 pointer-events-none absolute -top-24 -right-24 size-48 rounded-full opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
+                  className="pointer-events-none absolute -top-24 -right-24 size-48 rounded-full bg-accent/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100"
                 />
                 <IconBadge>
                   <Icon aria-hidden />
                 </IconBadge>
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-lg font-semibold tracking-tight">{t(`items.${key}.title`)}</h3>
-                  <p className="text-muted text-sm leading-relaxed">
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    {t(`items.${key}.title`)}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted">
                     {t(`items.${key}.description`)}
                   </p>
                 </div>
-                <ul className="border-border mt-auto flex flex-col gap-2 border-t pt-5">
+                <ul className="mt-auto flex flex-col gap-2 border-t border-border pt-5">
                   {features.map((feature) => (
-                    <li key={feature} className="text-foreground/85 flex items-start gap-2 text-sm">
-                      <Check aria-hidden className="text-accent mt-0.5 size-4 shrink-0" />
+                    <li key={feature} className="flex items-start gap-2 text-sm text-foreground/85">
+                      <Check aria-hidden className="mt-0.5 size-4 shrink-0 text-accent" />
                       {feature}
                     </li>
                   ))}

@@ -53,7 +53,7 @@ export function MobileMenu() {
     window.setTimeout(() => {
       window.history.replaceState(null, "", `#${hash}`);
       const lenis = getLenis();
-      if (lenis) lenis.scrollTo(target, { offset: -80 });
+      if (lenis) lenis.scrollTo(target);
       else target.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 300);
   };
@@ -61,7 +61,12 @@ export function MobileMenu() {
   return (
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger asChild>
-        <Button variant="ghost" size="icon" className="text-foreground lg:hidden" aria-label={t("a11y.openMenu")}>
+        <Button
+          variant="ghost"
+          size="icon"
+          className="text-foreground lg:hidden"
+          aria-label={t("a11y.openMenu")}
+        >
           <Menu aria-hidden className="size-5!" />
         </Button>
       </Dialog.Trigger>
@@ -70,7 +75,7 @@ export function MobileMenu() {
           <Dialog.Portal forceMount>
             <Dialog.Overlay asChild forceMount>
               <motion.div
-                className="bg-background/70 fixed inset-0 z-50 backdrop-blur-sm lg:hidden"
+                className="fixed inset-0 z-50 bg-background/70 backdrop-blur-sm lg:hidden"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
@@ -88,7 +93,7 @@ export function MobileMenu() {
               }}
             >
               <motion.div
-                className="bg-background fixed inset-0 z-50 flex flex-col overflow-y-auto pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] lg:hidden"
+                className="fixed inset-0 z-50 flex flex-col overflow-y-auto bg-background pt-[env(safe-area-inset-top)] pb-[env(safe-area-inset-bottom)] lg:hidden"
                 initial={{ opacity: 0, y: -12 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -12 }}
@@ -101,7 +106,12 @@ export function MobileMenu() {
                     <Logo title={siteConfig.name} />
                   </Link>
                   <Dialog.Close asChild>
-                    <Button variant="ghost" size="icon" className="text-foreground" aria-label={t("a11y.closeMenu")}>
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="text-foreground"
+                      aria-label={t("a11y.closeMenu")}
+                    >
                       <X aria-hidden className="size-5!" />
                     </Button>
                   </Dialog.Close>
@@ -115,15 +125,15 @@ export function MobileMenu() {
                         initial={{ opacity: 0, x: -12 }}
                         animate={{ opacity: 1, x: 0 }}
                         transition={{ delay: 0.05 + index * 0.04 }}
-                        className="border-border border-b"
+                        className="border-b border-border"
                       >
                         <Link
                           href={item.href}
                           onClick={(event) => onNavigate(event, item.href)}
-                          className="hover:text-accent-soft flex min-h-14 items-center justify-between text-2xl font-medium tracking-tight transition-colors"
+                          className="flex min-h-14 items-center justify-between text-2xl font-medium tracking-tight transition-colors hover:text-accent-soft"
                         >
                           {t(`nav.${item.key}`)}
-                          <ArrowRight aria-hidden className="text-subtle size-5" />
+                          <ArrowRight aria-hidden className="size-5 text-subtle" />
                         </Link>
                       </motion.li>
                     ))}
@@ -132,7 +142,7 @@ export function MobileMenu() {
 
                 <div className="container-page flex shrink-0 flex-col gap-4 pb-6">
                   <div className="flex items-center justify-between">
-                    <span className="text-muted text-sm">{t("language.label")}</span>
+                    <span className="text-sm text-muted">{t("language.label")}</span>
                     <LanguageSwitcher />
                   </div>
                   <Button asChild size="lg" className="w-full">

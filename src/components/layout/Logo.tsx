@@ -50,7 +50,7 @@ export function Logo({ className, withTagline = true, title }: LogoProps) {
     <span className={cn("inline-flex items-center gap-2.5 text-foreground", className)}>
       <LogoMark title={title} className="h-5 sm:h-6" />
       {withTagline && (
-        <span className="text-muted font-mono text-xs tracking-widest uppercase">technologies</span>
+        <span className="font-mono text-xs tracking-widest text-muted uppercase">technologies</span>
       )}
     </span>
   );

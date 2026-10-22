@@ -12,17 +12,17 @@ export async function Hero() {
 
   return (
     <section className="relative isolate overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-32">
-      <div aria-hidden className="bg-grid mask-fade-b absolute inset-0 -z-10 opacity-60" />
+      <div aria-hidden className="absolute inset-0 -z-10 bg-grid mask-fade-b opacity-60" />
       <div
         aria-hidden
-        className="bg-accent/20 animate-pulse-slow absolute -top-40 left-1/2 -z-10 size-144 -translate-x-1/2 rounded-full blur-3xl sm:size-192"
+        className="absolute -top-40 left-1/2 -z-10 size-144 -translate-x-1/2 animate-pulse-slow rounded-full bg-accent/20 blur-3xl sm:size-192"
       />
       <div
         aria-hidden
         className="absolute top-1/3 -right-40 -z-10 size-96 rounded-full bg-indigo-500/10 blur-3xl"
       />
 
-      <div className="container-page grid items-center gap-14 lg:grid-cols-12 lg:gap-10">
+      <div className="container-page grid grid-cols-1 items-center gap-14 lg:grid-cols-12 lg:gap-10">
         <div className="flex flex-col items-start gap-6 lg:col-span-7">
           <div className="animate-fade-up">
             <Eyebrow>{t("badge")}</Eyebrow>
@@ -31,10 +31,10 @@ export async function Hero() {
             {t("titleStart")} <span className="text-gradient">{t("titleHighlight")}</span>{" "}
             {t("titleEnd")}
           </h1>
-          <p className="animate-fade-up text-muted max-w-xl text-base leading-relaxed text-pretty [animation-delay:160ms] sm:text-lg">
+          <p className="max-w-xl animate-fade-up text-base leading-relaxed text-pretty text-muted [animation-delay:160ms] sm:text-lg">
             {t("subtitle")}
           </p>
-          <div className="animate-fade-up flex w-full flex-col gap-3 [animation-delay:240ms] min-[480px]:w-auto min-[480px]:flex-row">
+          <div className="flex w-full animate-fade-up flex-col gap-3 [animation-delay:240ms] min-[480px]:w-auto min-[480px]:flex-row">
             <Button asChild size="lg">
               <Link href={QUOTE_HREF}>
                 {t("ctaPrimary")}
@@ -48,17 +48,17 @@ export async function Hero() {
               <Link href={`/#${SECTION_IDS.services}`}>{t("ctaSecondary")}</Link>
             </Button>
           </div>
-          <ul className="animate-fade-up text-muted flex flex-col gap-x-6 gap-y-2 pt-2 text-sm [animation-delay:320ms] sm:flex-row sm:flex-wrap">
+          <ul className="flex animate-fade-up flex-col gap-x-6 gap-y-2 pt-2 text-sm text-muted [animation-delay:320ms] sm:flex-row sm:flex-wrap">
             {highlights.map((item) => (
               <li key={item} className="flex items-center gap-2">
-                <CircleCheck aria-hidden className="text-accent size-4 shrink-0" />
+                <CircleCheck aria-hidden className="size-4 shrink-0 text-accent" />
                 {item}
               </li>
             ))}
           </ul>
         </div>
 
-        <div className="animate-fade-up [animation-delay:300ms] lg:col-span-5">
+        <div className="min-w-0 animate-fade-up [animation-delay:300ms] lg:col-span-5">
           <HeroVisual />
         </div>
       </div>

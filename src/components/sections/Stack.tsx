@@ -24,19 +24,19 @@ export async function Stack() {
         title={t("title")}
         subtitle={t("subtitle")}
       />
-      <Stagger className="mt-14 grid gap-4 sm:mt-16 md:grid-cols-2 lg:gap-5">
+      <Stagger className="mt-14 grid grid-cols-1 gap-4 sm:mt-16 md:grid-cols-2 lg:gap-5">
         {groups.map(({ key, Icon, items }) => (
           <StaggerItem key={key} className="h-full">
             <Card className="flex h-full flex-col gap-5">
               <div className="flex items-center gap-3">
-                <Icon aria-hidden className="text-accent size-5" />
+                <Icon aria-hidden className="size-5 text-accent" />
                 <h3 className="text-base font-semibold tracking-tight">{t(`groups.${key}`)}</h3>
               </div>
               <ul className="flex flex-wrap gap-2">
                 {items.map((item) => (
                   <li
                     key={item}
-                    className="border-border bg-background/60 text-foreground/90 hover:border-accent/40 hover:text-foreground rounded-full border px-3 py-1.5 font-mono text-xs transition-colors sm:text-sm"
+                    className="rounded-full border border-border bg-background/60 px-3 py-1.5 font-mono text-xs text-foreground/90 transition-colors hover:border-accent/40 hover:text-foreground sm:text-sm"
                   >
                     {item}
                   </li>

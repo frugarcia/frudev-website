@@ -13,7 +13,7 @@ export function AccordionItem({
 }: ComponentProps<typeof AccordionPrimitive.Item>) {
   return (
     <AccordionPrimitive.Item
-      className={cn("border-border border-b last:border-b-0", className)}
+      className={cn("border-b border-border last:border-b-0", className)}
       {...props}
     />
   );
@@ -35,7 +35,7 @@ export function AccordionTrigger({
       >
         {children}
         <ChevronDown
-          className="text-muted size-5 shrink-0 transition-transform duration-300 group-data-[state=open]:rotate-180"
+          className="size-5 shrink-0 text-muted transition-transform duration-300 group-data-[state=open]:rotate-180"
           aria-hidden
         />
       </AccordionPrimitive.Trigger>
@@ -50,10 +50,10 @@ export function AccordionContent({
 }: ComponentProps<typeof AccordionPrimitive.Content>) {
   return (
     <AccordionPrimitive.Content
-      className="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden"
+      className="overflow-hidden data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
       {...props}
     >
-      <div className={cn("text-muted pb-5 text-base leading-relaxed", className)}>{children}</div>
+      <div className={cn("pb-5 text-base leading-relaxed text-muted", className)}>{children}</div>
     </AccordionPrimitive.Content>
   );
 }

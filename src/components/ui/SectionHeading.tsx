@@ -10,15 +10,21 @@ type SectionHeadingProps = {
   id?: string;
 };
 
-export function Eyebrow({ children, className }: { children: React.ReactNode; className?: string }) {
+export function Eyebrow({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
   return (
     <span
       className={cn(
-        "border-accent/25 bg-accent/10 text-accent-soft inline-flex items-center gap-2 rounded-full border px-3 py-1 font-mono text-xs tracking-wider uppercase",
+        "inline-flex items-center gap-2 rounded-full border border-accent/25 bg-accent/10 px-3 py-1 font-mono text-xs tracking-wider text-accent-soft uppercase",
         className,
       )}
     >
-      <span className="bg-accent size-1.5 rounded-full" aria-hidden />
+      <span className="size-1.5 rounded-full bg-accent" aria-hidden />
       {children}
     </span>
   );
@@ -47,9 +53,7 @@ export function SectionHeading({
       >
         {title}
       </h2>
-      {subtitle && (
-        <p className="text-muted text-base text-pretty sm:text-lg">{subtitle}</p>
-      )}
+      {subtitle && <p className="text-base text-pretty text-muted sm:text-lg">{subtitle}</p>}
     </Reveal>
   );
 }

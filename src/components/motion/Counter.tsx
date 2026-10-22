@@ -11,7 +11,13 @@ type CounterProps = {
   className?: string;
 };
 
-export function Counter({ value, prefix = "", suffix = "", duration = 1.6, className }: CounterProps) {
+export function Counter({
+  value,
+  prefix = "",
+  suffix = "",
+  duration = 1.6,
+  className,
+}: CounterProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
   const reduceMotion = useReducedMotion();

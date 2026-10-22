@@ -15,26 +15,32 @@ export async function TrustBar() {
   ];
 
   return (
-    <section aria-label={t("years")} className="border-border bg-surface/30 relative border-y">
+    <section aria-label={t("years")} className="relative border-y border-border bg-surface/30">
       <div className="container-page">
-        <Stagger className="divide-border grid grid-cols-2 lg:grid-cols-4 lg:divide-x">
+        <Stagger className="grid grid-cols-2 divide-border lg:grid-cols-4 lg:divide-x">
           {stats.map((stat) => (
-            <StaggerItem key={stat.label} className="flex flex-col gap-1 px-2 py-8 sm:px-6 sm:py-10">
+            <StaggerItem
+              key={stat.label}
+              className="flex flex-col gap-1 px-2 py-8 sm:px-6 sm:py-10"
+            >
               <Counter
                 value={stat.value}
                 prefix={stat.prefix}
                 suffix={stat.suffix}
-                className="text-foreground text-3xl font-semibold tracking-tight tabular-nums sm:text-4xl lg:text-5xl"
+                className="text-3xl font-semibold tracking-tight text-foreground tabular-nums sm:text-4xl lg:text-5xl"
               />
-              <span className="text-muted text-sm text-pretty">{stat.label}</span>
+              <span className="text-sm text-pretty text-muted">{stat.label}</span>
             </StaggerItem>
           ))}
         </Stagger>
       </div>
-      <div className="border-border mask-fade-x overflow-hidden border-t py-5" aria-hidden>
-        <div className="animate-marquee flex w-max gap-10 pr-10 hover:[animation-play-state:paused]">
+      <div className="overflow-hidden border-t border-border mask-fade-x py-5" aria-hidden>
+        <div className="flex w-max animate-marquee gap-10 pr-10 hover:[animation-play-state:paused]">
           {[...MARQUEE_TECH, ...MARQUEE_TECH].map((tech, index) => (
-            <span key={`${tech}-${index}`} className="text-subtle font-mono text-sm whitespace-nowrap">
+            <span
+              key={`${tech}-${index}`}
+              className="font-mono text-sm whitespace-nowrap text-subtle"
+            >
               {tech}
             </span>
           ))}

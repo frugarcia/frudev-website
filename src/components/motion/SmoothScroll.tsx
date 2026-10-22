@@ -19,7 +19,7 @@ export function SmoothScroll({ children }: { children: React.ReactNode }) {
     const lenis = new Lenis({
       autoRaf: true,
       lerp: 0.1,
-      anchors: { offset: -80 },
+      anchors: true,
     });
     lenisInstance = lenis;
     return () => {

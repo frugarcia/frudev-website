@@ -1,6 +1,11 @@
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/Accordion";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/Accordion";
 import { Section } from "@/components/ui/Section";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { SECTION_IDS } from "@/config/navigation";
@@ -13,7 +18,7 @@ export async function Faq() {
 
   return (
     <Section id={SECTION_IDS.faq} aria-labelledby="faq-title">
-      <div className="grid gap-10 lg:grid-cols-12 lg:gap-16">
+      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-4">
           <SectionHeading id="faq-title" eyebrow={t("eyebrow")} title={t("title")} align="left" />
         </div>
@@ -22,7 +27,7 @@ export async function Faq() {
             type="single"
             collapsible
             defaultValue="item-0"
-            className="border-border bg-surface/50 rounded-2xl border px-5 sm:px-7"
+            className="rounded-2xl border border-border bg-surface/50 px-5 sm:px-7"
           >
             {items.map((item, index) => (
               <AccordionItem key={item.q} value={`item-${index}`}>

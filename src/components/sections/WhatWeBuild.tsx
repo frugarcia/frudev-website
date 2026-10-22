@@ -36,11 +36,11 @@ export async function WhatWeBuild() {
         title={t("title")}
         subtitle={t("subtitle")}
       />
-      <Stagger className="mt-14 grid gap-4 sm:mt-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
+      <Stagger className="mt-14 grid grid-cols-1 gap-4 sm:mt-16 md:grid-cols-2 lg:grid-cols-3 lg:gap-5">
         {ITEMS.map(({ key, Icon, Mock, span }) => (
           <StaggerItem key={key} className={cn("h-full", span)}>
             <Card className="flex h-full flex-col gap-6 p-0 sm:p-0">
-              <div className="border-border bg-background/60 relative overflow-hidden border-b p-4 sm:p-6">
+              <div className="relative overflow-hidden border-b border-border bg-background/60 p-4 sm:p-6">
                 <Mock labels={labels} />
               </div>
               <div className="flex items-start gap-4 px-6 pb-6 sm:px-7 sm:pb-7">
@@ -48,8 +48,10 @@ export async function WhatWeBuild() {
                   <Icon aria-hidden />
                 </IconBadge>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-lg font-semibold tracking-tight">{t(`items.${key}.title`)}</h3>
-                  <p className="text-muted text-sm leading-relaxed">
+                  <h3 className="text-lg font-semibold tracking-tight">
+                    {t(`items.${key}.title`)}
+                  </h3>
+                  <p className="text-sm leading-relaxed text-muted">
                     {t(`items.${key}.description`)}
                   </p>
                 </div>

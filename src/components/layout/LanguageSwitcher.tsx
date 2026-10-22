@@ -14,7 +14,7 @@ export function LanguageSwitcher({ className }: { className?: string }) {
     <nav
       aria-label={t("label")}
       className={cn(
-        "border-border bg-surface/60 inline-flex items-center rounded-full border p-1 font-mono text-xs",
+        "inline-flex items-center rounded-full border border-border bg-surface/60 p-1 font-mono text-xs",
         className,
       )}
     >

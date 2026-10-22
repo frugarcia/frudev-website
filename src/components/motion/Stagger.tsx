@@ -9,7 +9,13 @@ type StaggerProps = HTMLMotionProps<"div"> & {
   delay?: number;
 };
 
-export function Stagger({ as = "div", stagger = 0.08, delay = 0, children, ...props }: StaggerProps) {
+export function Stagger({
+  as = "div",
+  stagger = 0.08,
+  delay = 0,
+  children,
+  ...props
+}: StaggerProps) {
   const Component = motion[as] as typeof motion.div;
   const variants: Variants = {
     hidden: {},

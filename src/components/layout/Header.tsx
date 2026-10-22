@@ -34,17 +34,24 @@ export function Header() {
     >
       <div className="container-page flex h-16 items-center justify-between gap-3 lg:h-18">
         <Link href="/" aria-label={t("a11y.home")} className="-m-2 flex min-h-11 items-center p-2">
-          <Logo title={siteConfig.name} withTagline={false} className="sm:hidden" />
-          <Logo title={siteConfig.name} className="hidden sm:inline-flex" />
+          <Logo
+            title={siteConfig.name}
+            withTagline={false}
+            className="sm:hidden lg:inline-flex xl:hidden"
+          />
+          <Logo
+            title={siteConfig.name}
+            className="hidden sm:inline-flex lg:hidden xl:inline-flex"
+          />
         </Link>
 
         <nav aria-label={t("a11y.mainNav")} className="hidden lg:block">
-          <ul className="flex items-center gap-1">
+          <ul className="flex items-center xl:gap-1">
             {NAV_ITEMS.map((item) => (
               <li key={item.key}>
                 <Link
                   href={item.href}
-                  className="text-muted hover:text-foreground rounded-full px-3 py-2 text-sm transition-colors"
+                  className="rounded-full px-2.5 py-2 text-sm whitespace-nowrap text-muted transition-colors hover:text-foreground xl:px-3"
                 >
                   {t(`nav.${item.key}`)}
                 </Link>

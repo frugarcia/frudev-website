@@ -146,14 +146,18 @@ export function QuoteForm() {
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ type: "spring", stiffness: 260, damping: 18, delay: 0.1 }}
-          className="bg-success/15 text-success flex size-16 items-center justify-center rounded-full"
+          className="flex size-16 items-center justify-center rounded-full bg-success/15 text-success"
         >
           <CircleCheck aria-hidden className="size-8" />
         </motion.span>
-        <h3 ref={headingRef} tabIndex={-1} className="text-2xl font-semibold tracking-tight outline-none">
+        <h3
+          ref={headingRef}
+          tabIndex={-1}
+          className="text-2xl font-semibold tracking-tight outline-none"
+        >
           {t("success.title")}
         </h3>
-        <p className="text-muted max-w-md">{t("success.description", { name: submittedName })}</p>
+        <p className="max-w-md text-muted">{t("success.description", { name: submittedName })}</p>
         <Button variant="secondary" onClick={() => setStatus("idle")}>
           {t("buttons.again")}
         </Button>
@@ -167,7 +171,7 @@ export function QuoteForm() {
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="flex flex-col">
       <div className="flex flex-col gap-3 px-5 pt-6 sm:px-8 sm:pt-8">
         <div className="flex items-center justify-between gap-4 text-xs">
-          <span className="text-accent-soft font-mono tracking-wider uppercase">
+          <span className="font-mono tracking-wider text-accent-soft uppercase">
             {t("stepLabel", { current: step + 1, total })}
           </span>
           <ol className="hidden items-center gap-4 sm:flex">
@@ -198,7 +202,7 @@ export function QuoteForm() {
           </ol>
         </div>
         <div
-          className="bg-surface-2 h-1 overflow-hidden rounded-full"
+          className="h-1 overflow-hidden rounded-full bg-surface-2"
           role="progressbar"
           aria-valuemin={0}
           aria-valuemax={100}
@@ -206,7 +210,7 @@ export function QuoteForm() {
           aria-label={t("stepLabel", { current: step + 1, total })}
         >
           <motion.div
-            className="from-accent-strong to-accent-soft h-full rounded-full bg-linear-to-r"
+            className="h-full rounded-full bg-linear-to-r from-accent-strong to-accent-soft"
             initial={false}
             animate={{ width: `${progress}%` }}
             transition={{ type: "spring", stiffness: 120, damping: 20 }}
@@ -228,7 +232,11 @@ export function QuoteForm() {
             {step === 0 && (
               <>
                 <legend className="contents">
-                  <h3 ref={headingRef} tabIndex={-1} className="text-xl font-semibold tracking-tight outline-none">
+                  <h3
+                    ref={headingRef}
+                    tabIndex={-1}
+                    className="text-xl font-semibold tracking-tight outline-none"
+                  >
                     {t("typeQuestion")}
                   </h3>
                 </legend>
@@ -240,7 +248,7 @@ export function QuoteForm() {
                       <label
                         key={type}
                         className={cn(
-                          "has-focus-visible:ring-accent/40 relative flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border p-3.5 text-sm transition-all has-focus-visible:ring-4",
+                          "relative flex min-h-14 cursor-pointer items-center gap-3 rounded-xl border p-3.5 text-sm transition-all has-focus-visible:ring-4 has-focus-visible:ring-accent/40",
                           checked
                             ? "border-accent/70 bg-accent/10 text-foreground"
                             : "border-border bg-background/50 text-foreground/85 hover:border-border-strong",
@@ -255,27 +263,38 @@ export function QuoteForm() {
                         <span
                           className={cn(
                             "flex size-9 shrink-0 items-center justify-center rounded-lg transition-colors",
-                            checked ? "bg-accent text-accent-foreground" : "bg-surface-2 text-accent",
+                            checked
+                              ? "bg-accent text-accent-foreground"
+                              : "bg-surface-2 text-accent",
                           )}
                         >
                           <Icon aria-hidden className="size-4" />
                         </span>
                         <span className="font-medium">{t(`types.${type}`)}</span>
                         {checked && (
-                          <Check aria-hidden className="text-accent absolute top-2 right-2 size-3.5" />
+                          <Check
+                            aria-hidden
+                            className="absolute top-2 right-2 size-3.5 text-accent"
+                          />
                         )}
                       </label>
                     );
                   })}
                 </div>
-                <FieldErrorText message={errorText(errors.projectTypes as FieldError | undefined)} />
+                <FieldErrorText
+                  message={errorText(errors.projectTypes as FieldError | undefined)}
+                />
               </>
             )}
 
             {step === 1 && (
               <>
                 <legend className="sr-only">{t("steps.scope")}</legend>
-                <div className="flex flex-col gap-3" role="radiogroup" aria-labelledby="budget-label">
+                <div
+                  className="flex flex-col gap-3"
+                  role="radiogroup"
+                  aria-labelledby="budget-label"
+                >
                   <h3
                     id="budget-label"
                     ref={headingRef}
@@ -296,7 +315,11 @@ export function QuoteForm() {
                   </div>
                   <FieldErrorText message={errorText(errors.budget)} />
                 </div>
-                <div className="flex flex-col gap-3" role="radiogroup" aria-labelledby="timeline-label">
+                <div
+                  className="flex flex-col gap-3"
+                  role="radiogroup"
+                  aria-labelledby="timeline-label"
+                >
                   <h3 id="timeline-label" className="text-xl font-semibold tracking-tight">
                     {t("timelineQuestion")}
                   </h3>
@@ -318,12 +341,21 @@ export function QuoteForm() {
             {step === 2 && (
               <>
                 <legend className="contents">
-                  <h3 ref={headingRef} tabIndex={-1} className="text-xl font-semibold tracking-tight outline-none">
+                  <h3
+                    ref={headingRef}
+                    tabIndex={-1}
+                    className="text-xl font-semibold tracking-tight outline-none"
+                  >
                     {t("steps.contact")}
                   </h3>
                 </legend>
-                <div className="grid gap-4 sm:grid-cols-2">
-                  <Field id="quote-name" label={t("fields.name")} required error={errorText(errors.name)}>
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  <Field
+                    id="quote-name"
+                    label={t("fields.name")}
+                    required
+                    error={errorText(errors.name)}
+                  >
                     <input
                       id="quote-name"
                       type="text"
@@ -335,7 +367,12 @@ export function QuoteForm() {
                       {...register("name")}
                     />
                   </Field>
-                  <Field id="quote-email" label={t("fields.email")} required error={errorText(errors.email)}>
+                  <Field
+                    id="quote-email"
+                    label={t("fields.email")}
+                    required
+                    error={errorText(errors.email)}
+                  >
                     <input
                       id="quote-email"
                       type="email"
@@ -393,18 +430,24 @@ export function QuoteForm() {
                 </div>
                 <div aria-hidden className="sr-only">
                   <label htmlFor="quote-website">{t("fields.website")}</label>
-                  <input id="quote-website" type="text" tabIndex={-1} autoComplete="off" {...register("website")} />
+                  <input
+                    id="quote-website"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                    {...register("website")}
+                  />
                 </div>
                 <div className="flex flex-col gap-2">
                   <label className="flex min-h-11 cursor-pointer items-start gap-3 text-sm">
                     <input
                       type="checkbox"
-                      className="accent-accent border-border mt-0.5 size-5 shrink-0 cursor-pointer rounded"
+                      className="mt-0.5 size-5 shrink-0 cursor-pointer rounded border-border accent-accent"
                       aria-invalid={errors.privacy ? true : undefined}
                       aria-describedby={errors.privacy ? "quote-privacy-error" : undefined}
                       {...register("privacy")}
                     />
-                    <span className="text-muted leading-relaxed">
+                    <span className="leading-relaxed text-muted">
                       {t.rich("fields.privacy", {
                         link: (chunks) => (
                           <Link
@@ -427,12 +470,15 @@ export function QuoteForm() {
       </div>
 
       {status === "error" && (
-        <p role="alert" className="border-danger/30 bg-danger/10 text-danger mx-5 rounded-xl border px-4 py-3 text-sm sm:mx-8">
+        <p
+          role="alert"
+          className="mx-5 rounded-xl border border-danger/30 bg-danger/10 px-4 py-3 text-sm text-danger sm:mx-8"
+        >
           {t("errors.generic")}
         </p>
       )}
 
-      <div className="border-border bg-surface/95 sticky bottom-0 z-10 mt-2 flex items-center justify-between gap-3 rounded-b-2xl border-t px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:px-8 sm:py-5">
+      <div className="sticky bottom-0 z-10 mt-2 flex items-center justify-between gap-3 rounded-b-2xl border-t border-border bg-surface/95 px-5 py-4 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur sm:static sm:px-8 sm:py-5">
         <Button
           type="button"
           variant="ghost"
@@ -472,7 +518,7 @@ export function QuoteForm() {
 function FieldErrorText({ message, id }: { message?: string; id?: string }) {
   if (!message) return null;
   return (
-    <p id={id} role="alert" className="text-danger text-sm">
+    <p id={id} role="alert" className="text-sm text-danger">
       {message}
     </p>
   );
@@ -495,10 +541,10 @@ function Field({
 }) {
   return (
     <div className={cn("flex flex-col gap-2", className)}>
-      <label htmlFor={id} className="text-foreground/90 text-sm font-medium">
+      <label htmlFor={id} className="text-sm font-medium text-foreground/90">
         {label}
         {required && (
-          <span aria-hidden className="text-accent ml-0.5">
+          <span aria-hidden className="ml-0.5 text-accent">
             *
           </span>
         )}
@@ -521,7 +567,7 @@ function ChoicePill({
   return (
     <label
       className={cn(
-        "has-focus-visible:ring-accent/40 flex min-h-11 cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all has-focus-visible:ring-4",
+        "flex min-h-11 cursor-pointer items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all has-focus-visible:ring-4 has-focus-visible:ring-accent/40",
         checked
           ? "border-accent/70 bg-accent/10 text-foreground"
           : "border-border bg-background/50 text-foreground/80 hover:border-border-strong",
@@ -535,7 +581,7 @@ function ChoicePill({
           checked ? "border-accent bg-accent" : "border-border-strong",
         )}
       >
-        {checked && <span className="bg-accent-foreground size-1.5 rounded-full" />}
+        {checked && <span className="size-1.5 rounded-full bg-accent-foreground" />}
       </span>
       {label}
     </label>

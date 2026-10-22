@@ -51,14 +51,15 @@ export default async function LegalPage({ params }: { params: Params }) {
     address: address ? `, ${address}` : "",
     email: siteConfig.email ? ` (${siteConfig.email})` : "",
   };
-  const fill = (text: string) => text.replace(/\{(\w+)\}/g, (_, name: string) => values[name] ?? "");
+  const fill = (text: string) =>
+    text.replace(/\{(\w+)\}/g, (_, name: string) => values[name] ?? "");
   const date = new Intl.DateTimeFormat(locale, { dateStyle: "long" }).format(new Date(updatedAt));
 
   return (
     <article className="container-page max-w-3xl pt-32 pb-24 sm:pt-40">
       <Link
         href="/"
-        className="text-muted hover:text-foreground -ml-2 inline-flex min-h-11 items-center gap-2 px-2 text-sm transition-colors"
+        className="-ml-2 inline-flex min-h-11 items-center gap-2 px-2 text-sm text-muted transition-colors hover:text-foreground"
       >
         <ArrowLeft aria-hidden className="size-4" />
         {t("back")}
@@ -66,12 +67,12 @@ export default async function LegalPage({ params }: { params: Params }) {
       <h1 className="mt-6 text-3xl font-semibold tracking-tight text-balance sm:text-5xl">
         {t(`${key}.title`)}
       </h1>
-      <p className="text-subtle mt-3 font-mono text-xs">{t("updated", { date })}</p>
+      <p className="mt-3 font-mono text-xs text-subtle">{t("updated", { date })}</p>
       <div className="mt-12 flex flex-col gap-10">
         {sections.map((section) => (
           <section key={section.heading} className="flex flex-col gap-3">
             <h2 className="text-xl font-semibold tracking-tight">{fill(section.heading)}</h2>
-            <p className="text-muted leading-relaxed text-pretty">{fill(section.body)}</p>
+            <p className="leading-relaxed text-pretty text-muted">{fill(section.body)}</p>
           </section>
         ))}
       </div>
