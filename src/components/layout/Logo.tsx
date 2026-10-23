@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 type LogoProps = {
@@ -8,10 +9,13 @@ type LogoProps = {
 
 export function Logo({ className, compact = false, title }: LogoProps) {
   return (
-    <img
+    <Image
       src={compact ? "/images/logo-mark.svg" : "/images/logo.svg"}
       alt={title ?? ""}
-      className={cn(compact ? "size-9 object-contain" : "h-10 w-auto", className)}
+      width={compact ? 140 : 240}
+      height={compact ? 148 : 77}
+      style={compact ? { width: 36, height: 36 } : { width: "auto", height: 40 }}
+      className={cn(compact && "object-contain", className)}
     />
   );
 }

@@ -1,4 +1,5 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Button } from "@/components/ui/Button";
@@ -65,13 +66,13 @@ export default async function ProjectsPage({ params }: { params: Params }) {
                   </p>
                   <h2 className="mt-3 text-3xl font-semibold tracking-tight">{study.client}</h2>
                   {logo && (
-                    <img
+                    <Image
                       src={logo.src}
                       alt=""
                       width={logo.width}
                       height={logo.height}
-                      style={{ height: Math.min(logo.height, 48) }}
-                      className="mt-8 w-auto opacity-80"
+                      style={{ height: Math.min(logo.height, 48), width: "auto" }}
+                      className="mt-8 opacity-80"
                     />
                   )}
                 </div>

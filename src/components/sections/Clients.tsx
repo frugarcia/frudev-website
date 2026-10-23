@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { CLIENTS } from "@/config/clients";
 
@@ -12,26 +13,26 @@ export async function Clients() {
       <div className="overflow-hidden mask-fade-x pt-6 pb-8">
         <div className="flex w-max animate-marquee items-center gap-16 pr-16 hover:[animation-play-state:paused]">
           {CLIENTS.map((client) => (
-            <img
+            <Image
               key={client.src}
               src={client.src}
               alt={client.name}
               width={client.width}
               height={client.height}
-              style={{ height: client.height }}
-              className="w-auto opacity-70 transition-opacity hover:opacity-100"
+              style={{ height: client.height, width: "auto" }}
+              className="opacity-70 transition-opacity hover:opacity-100"
             />
           ))}
           {CLIENTS.map((client) => (
-            <img
+            <Image
               key={`${client.src}-copy`}
               src={client.src}
               alt=""
               aria-hidden
               width={client.width}
               height={client.height}
-              style={{ height: client.height }}
-              className="w-auto opacity-70 transition-opacity hover:opacity-100"
+              style={{ height: client.height, width: "auto" }}
+              className="opacity-70 transition-opacity hover:opacity-100"
             />
           ))}
         </div>
