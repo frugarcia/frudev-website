@@ -34,15 +34,8 @@ export function Header() {
     >
       <div className="container-page flex h-16 items-center justify-between gap-3 lg:h-18">
         <Link href="/" aria-label={t("a11y.home")} className="-m-2 flex min-h-11 items-center p-2">
-          <Logo
-            title={siteConfig.name}
-            withTagline={false}
-            className="sm:hidden lg:inline-flex xl:hidden"
-          />
-          <Logo
-            title={siteConfig.name}
-            className="hidden sm:inline-flex lg:hidden xl:inline-flex"
-          />
+          <Logo title={siteConfig.name} compact className="sm:hidden lg:inline xl:hidden" />
+          <Logo title={siteConfig.name} className="hidden sm:inline lg:hidden xl:inline" />
         </Link>
 
         <nav aria-label={t("a11y.mainNav")} className="hidden lg:block">

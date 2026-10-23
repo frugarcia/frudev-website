@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "frudev technologies | Custom software, websites and automation",
+    "title": "frudev technologies | Custom software, websites, apps and AI",
     "titleTemplate": "%s | frudev technologies",
-    "description": "We design and build custom business software, high-performance corporate websites, APIs, automations and cloud deployments. Tell us about your project and get a quote.",
-    "keywords": "custom software development, web development, Next.js, React, TypeScript, APIs, automation, Docker, Cloud Run, custom ERP"
+    "description": "We design and build custom business software, websites, hybrid apps for iOS, Android and desktop, APIs, automations, AI features and deployments on AWS, Google Cloud and Cloudflare. Tell us about your project and get a quote.",
+    "keywords": "custom software development, web development, hybrid apps, AI implementation, Python, Go, Java, TypeScript, AWS, Google Cloud, Cloudflare, APIs, automation"
   },
   "a11y": {
     "skipToContent": "Skip to content",
@@ -31,7 +31,7 @@
     "titleStart": "Custom software that",
     "titleHighlight": "grows",
     "titleEnd": "your business",
-    "subtitle": "At frudev technologies we design, build and maintain business applications, corporate websites, APIs and automations using modern, fast and maintainable technology.",
+    "subtitle": "At frudev technologies we design, build and maintain business applications, websites, apps for iOS, Android and desktop, APIs, automations and AI features, using the language and cloud that fit your project.",
     "ctaPrimary": "Get your quote",
     "ctaSecondary": "See services",
     "highlights": [
@@ -69,11 +69,29 @@
           "Custom design and animation"
         ]
       },
+      "apps": {
+        "title": "Hybrid applications",
+        "description": "One codebase for iOS, Android and desktop, with the same business logic as your website.",
+        "features": [
+          "iOS, Android and desktop",
+          "Store and desktop releases",
+          "The same business logic as the website"
+        ]
+      },
+      "ai": {
+        "title": "AI built into your projects",
+        "description": "We integrate artificial intelligence into the software your business already uses, not as a separate product.",
+        "features": [
+          "Assistants and intelligent features inside the app",
+          "Task automation with models",
+          "Connected to your data and processes"
+        ]
+      },
       "apis": {
         "title": "APIs, integrations and microservices",
         "description": "We connect your systems, third-party services and apps with secure, documented APIs.",
         "features": [
-          "REST APIs with Node.js",
+          "REST APIs in several languages",
           "CMS, payments and auth integrations",
           "Modular, scalable architectures"
         ]
@@ -92,7 +110,7 @@
         "description": "Reliable, reproducible deployments so your application is always available.",
         "features": [
           "Docker containers and Nginx",
-          "Google Cloud Run and Vercel",
+          "AWS, Google Cloud Platform and Cloudflare",
           "CI/CD and config-driven environments"
         ]
       },
@@ -190,7 +208,7 @@
     "items": [
       {
         "title": "Modern, maintainable technology",
-        "description": "We moved from React 16 to React 19 and Tailwind 4. We use modern tools with long-term support."
+        "description": "We moved from React 16 to React 19 and Tailwind 4. We choose the language for the project, using modern tools with long-term support."
       },
       {
         "title": "Direct communication",
@@ -282,6 +300,8 @@
     "types": {
       "management": "Business software",
       "web": "Corporate website",
+      "apps": "Hybrid app",
+      "ai": "AI implementation",
       "apis": "API or integration",
       "automation": "Automation",
       "cloud": "Cloud and DevOps",
@@ -349,7 +369,7 @@
     "confirmationSignature": "The frudev technologies team"
   },
   "footer": {
-    "tagline": "Custom software, websites and automation built with modern technology.",
+    "tagline": "Custom software, websites, hybrid apps and AI built with modern technology.",
     "navigation": "Navigation",
     "legal": "Legal",
     "contact": "Contact",
@@ -365,11 +385,11 @@
       "sections": [
         {
           "heading": "Website owner",
-          "body": "In accordance with Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), this website is owned by {owner}{taxId}{address}. You can contact us through the quote form{email}."
+          "body": "In accordance with Spanish Law 34/2002 on Information Society Services and Electronic Commerce (LSSI-CE), this website is owned by {owner}, CIF {taxId}, with registered office at {address}. It is entered in the {registry}. You can contact us at {email} or through the quote form."
         },
         {
           "heading": "Purpose",
-          "body": "This website provides information about the software development, web design, systems integration, automation and technology consulting services offered by {owner}, and allows visitors to request quotes."
+          "body": "This website provides information about the software development, web design, hybrid applications for iOS, Android and desktop, systems integration, automation, artificial intelligence implementation and technology consulting services offered by {owner}, and allows visitors to request quotes."
         },
         {
           "heading": "Intellectual and industrial property",
@@ -390,27 +410,27 @@
       "sections": [
         {
           "heading": "Data controller",
-          "body": "The controller of your personal data is {owner}{email}."
+          "body": "The controller of your personal data is {owner}, CIF {taxId}, with registered office at {address}. You can contact us and exercise your rights at {email}."
         },
         {
           "heading": "What data we process and why",
-          "body": "We process the data you provide in the quote form (name, email, company, phone and project description) solely to answer your request and, where applicable, to prepare and send you a commercial proposal."
+          "body": "We process the data you provide in the quote form (name, email, company, phone and project description) to answer your request and, where applicable, to prepare and send you a commercial proposal. We also process the IP address and technical data in the server logs for security, incident diagnosis and operation of the site."
         },
         {
           "heading": "Legal basis",
-          "body": "The legal basis is your consent, given by ticking the acceptance box, and taking pre-contractual steps at your request (Art. 6.1.a and 6.1.b GDPR)."
+          "body": "For the form, the legal basis is your consent, given by ticking the acceptance box, and taking pre-contractual steps at your request (Art. 6.1.a and 6.1.b GDPR). For the server logs, the legal basis is the legitimate interest in keeping the site secure and operational (Art. 6.1.f GDPR)."
         },
         {
           "heading": "Retention",
-          "body": "We keep your data for as long as needed to handle your request and, if we work together, for the duration of the contract and applicable legal periods."
+          "body": "If a request does not become a contract, we keep your data for 2 years. If we work together, we keep it for the duration of the contract and the applicable legal periods. Server logs that include the IP address are kept for 2 years."
         },
         {
           "heading": "Recipients",
-          "body": "We do not share your data with third parties unless legally required. We use an email provider (Resend) that acts as a data processor with appropriate safeguards."
+          "body": "We do not share your data with third parties unless legally required, and we do not use analytics tools. The site is hosted by IONOS, which acts as processor for the server and for logs that include the IP address. We use Resend as processor to send email. We do not transfer data outside the European Economic Area."
         },
         {
           "heading": "Your rights",
-          "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to us. You may also lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+          "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to {email}. You may also lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
         }
       ]
     },

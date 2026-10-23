@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 import { ImageResponse } from "next/og";
 import { getTranslations } from "next-intl/server";
 import { getYearsOfExperience, siteConfig } from "@/config/site";
@@ -11,6 +13,8 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
   const { locale } = await params;
   const t = await getTranslations({ locale: locale as Locale, namespace: "hero" });
   const tTrust = await getTranslations({ locale: locale as Locale, namespace: "trust" });
+  const logo = await readFile(join(process.cwd(), "public/images/logo-lockup.png"));
+  const logoSrc = `data:image/png;base64,${logo.toString("base64")}`;
 
   return new ImageResponse(
     <div
@@ -26,13 +30,9 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
         fontFamily: "sans-serif",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 34 }}>
-        <span style={{ color: "#38bdf8", fontWeight: 700 }}>{"<"}</span>
-        <span style={{ fontWeight: 700 }}>frudev</span>
-        <span style={{ color: "#38bdf8", fontWeight: 700 }}>{"/>"}</span>
-        <span style={{ color: "#8f9bb0", fontSize: 22, letterSpacing: 6, marginLeft: 8 }}>
-          TECHNOLOGIES
-        </span>
+      <div style={{ display: "flex" }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={logoSrc} width={280} height={90} alt="" />
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
         <div
@@ -50,7 +50,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
           {t("titleEnd")}
         </div>
         <div style={{ fontSize: 28, color: "#8f9bb0", display: "flex" }}>
-          {`+${getYearsOfExperience()} ${tTrust("years")} · Next.js · TypeScript · Cloud`}
+          {`+${getYearsOfExperience()} ${tTrust("years")} · Python · Go · Java · Cloud`}
         </div>
       </div>
     </div>,

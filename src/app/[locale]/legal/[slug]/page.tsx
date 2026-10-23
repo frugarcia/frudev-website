@@ -44,12 +44,13 @@ export default async function LegalPage({ params }: { params: Params }) {
   const t = await getTranslations("legal");
   const key: LegalKey = page.key;
   const sections = t.raw(`${key}.sections`) as Array<{ heading: string; body: string }>;
-  const { owner, taxId, address, updatedAt } = siteConfig.legal;
+  const { owner, taxId, address, registry, updatedAt } = siteConfig.legal;
   const values: Record<string, string> = {
     owner,
-    taxId: taxId ? `, NIF ${taxId}` : "",
-    address: address ? `, ${address}` : "",
-    email: siteConfig.email ? ` (${siteConfig.email})` : "",
+    taxId,
+    address,
+    registry,
+    email: siteConfig.email,
   };
   const fill = (text: string) =>
     text.replace(/\{(\w+)\}/g, (_, name: string) => values[name] ?? "");

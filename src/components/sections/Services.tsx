@@ -1,4 +1,14 @@
-import { Check, Cloud, Globe, LayoutDashboard, Plug, Workflow, Wrench } from "lucide-react";
+import {
+  Brain,
+  Check,
+  Cloud,
+  Globe,
+  LayoutDashboard,
+  Plug,
+  Smartphone,
+  Workflow,
+  Wrench,
+} from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 import { Card, IconBadge } from "@/components/ui/Card";
@@ -9,6 +19,8 @@ import { SECTION_IDS } from "@/config/navigation";
 const SERVICES = [
   { key: "management", Icon: LayoutDashboard },
   { key: "web", Icon: Globe },
+  { key: "apps", Icon: Smartphone },
+  { key: "ai", Icon: Brain },
   { key: "apis", Icon: Plug },
   { key: "automation", Icon: Workflow },
   { key: "cloud", Icon: Cloud },

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "title": "frudev technologies | Software a medida, webs y automatización",
+    "title": "frudev technologies | Software a medida, webs, apps e IA",
     "titleTemplate": "%s | frudev technologies",
-    "description": "Diseñamos y desarrollamos software de gestión a medida, webs corporativas de alto rendimiento, APIs, automatizaciones y despliegues cloud. Cuéntanos tu proyecto y te enviamos un presupuesto.",
-    "keywords": "desarrollo de software a medida, desarrollo web, Next.js, React, TypeScript, APIs, automatización, Docker, Cloud Run, ERP a medida"
+    "description": "Diseñamos y desarrollamos software de gestión a medida, webs, aplicaciones híbridas para iOS, Android y escritorio, APIs, automatizaciones, implementación de IA y despliegues en AWS, Google Cloud y Cloudflare. Cuéntanos tu proyecto y te enviamos un presupuesto.",
+    "keywords": "desarrollo de software a medida, desarrollo web, aplicaciones híbridas, implementación de IA, Python, Go, Java, TypeScript, AWS, Google Cloud, Cloudflare, APIs, automatización"
   },
   "a11y": {
     "skipToContent": "Saltar al contenido",
@@ -31,7 +31,7 @@
     "titleStart": "Software a medida que",
     "titleHighlight": "hace crecer",
     "titleEnd": "tu negocio",
-    "subtitle": "En frudev technologies diseñamos, desarrollamos y mantenemos aplicaciones de gestión, webs corporativas, APIs y automatizaciones con tecnología moderna, rápida y fácil de mantener.",
+    "subtitle": "En frudev technologies diseñamos, desarrollamos y mantenemos aplicaciones de gestión, webs, apps para iOS, Android y escritorio, APIs, automatizaciones e implementación de IA, con el lenguaje y la nube que encajan en tu proyecto.",
     "ctaPrimary": "Pide tu presupuesto",
     "ctaSecondary": "Ver servicios",
     "highlights": [
@@ -69,11 +69,29 @@
           "Animaciones y diseño a medida"
         ]
       },
+      "apps": {
+        "title": "Aplicaciones híbridas",
+        "description": "Una sola base de código para iOS, Android y escritorio, con la misma lógica de negocio que tu web.",
+        "features": [
+          "iOS, Android y escritorio",
+          "Publicación en tiendas y en escritorio",
+          "La misma lógica de negocio que en la web"
+        ]
+      },
+      "ai": {
+        "title": "Implementación de IA en tus proyectos",
+        "description": "Integramos inteligencia artificial dentro del software que ya usa tu negocio, no como un producto aparte.",
+        "features": [
+          "Asistentes y funciones inteligentes en la aplicación",
+          "Automatización de tareas con modelos",
+          "Conexión con tus datos y procesos"
+        ]
+      },
       "apis": {
         "title": "APIs, integraciones y microservicios",
         "description": "Conectamos tus sistemas, servicios de terceros y aplicaciones con APIs seguras y documentadas.",
         "features": [
-          "APIs REST con Node.js",
+          "APIs REST en varios lenguajes",
           "Integración con CMS, pagos y autenticación",
           "Arquitecturas modulares y escalables"
         ]
@@ -92,7 +110,7 @@
         "description": "Despliegues fiables y reproducibles para que tu aplicación esté siempre disponible.",
         "features": [
           "Contenedores Docker y Nginx",
-          "Google Cloud Run y Vercel",
+          "AWS, Google Cloud Platform y Cloudflare",
           "CI/CD y entornos por configuración"
         ]
       },
@@ -190,7 +208,7 @@
     "items": [
       {
         "title": "Tecnología actual y mantenible",
-        "description": "Hemos evolucionado de React 16 a React 19 y Tailwind 4. Usamos herramientas modernas con soporte a largo plazo."
+        "description": "Hemos evolucionado de React 16 a React 19 y Tailwind 4. Elegimos el lenguaje según el proyecto, con herramientas modernas y soporte a largo plazo."
       },
       {
         "title": "Comunicación directa",
@@ -282,6 +300,8 @@
     "types": {
       "management": "Software de gestión",
       "web": "Web corporativa",
+      "apps": "App híbrida",
+      "ai": "Implementación de IA",
       "apis": "API o integración",
       "automation": "Automatización",
       "cloud": "Cloud y DevOps",
@@ -349,7 +369,7 @@
     "confirmationSignature": "El equipo de frudev technologies"
   },
   "footer": {
-    "tagline": "Software a medida, webs y automatización con tecnología actual.",
+    "tagline": "Software a medida, webs, apps híbridas e IA con tecnología actual.",
     "navigation": "Navegación",
     "legal": "Legal",
     "contact": "Contacto",
@@ -365,11 +385,11 @@
       "sections": [
         {
           "heading": "Titular del sitio web",
-          "body": "En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de {owner}{taxId}{address}. Puedes contactar con nosotros a través del formulario de presupuesto{email}."
+          "body": "En cumplimiento de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de {owner}, con CIF {taxId} y domicilio en {address}. Está inscrita en el {registry}. Puedes contactar en {email} o a través del formulario de presupuesto."
         },
         {
           "heading": "Objeto",
-          "body": "Este sitio web tiene como finalidad informar sobre los servicios de desarrollo de software, diseño web, integración de sistemas, automatización y consultoría tecnológica que presta {owner}, así como facilitar la solicitud de presupuestos."
+          "body": "Este sitio web tiene como finalidad informar sobre los servicios de desarrollo de software, diseño web, aplicaciones híbridas para iOS, Android y escritorio, integración de sistemas, automatización, implementación de inteligencia artificial y consultoría tecnológica que presta {owner}, así como facilitar la solicitud de presupuestos."
         },
         {
           "heading": "Propiedad intelectual e industrial",
@@ -390,27 +410,27 @@
       "sections": [
         {
           "heading": "Responsable del tratamiento",
-          "body": "El responsable del tratamiento de tus datos es {owner}{email}."
+          "body": "El responsable del tratamiento de tus datos es {owner}, con CIF {taxId} y domicilio en {address}. Puedes contactar y ejercer tus derechos en {email}."
         },
         {
           "heading": "Qué datos tratamos y para qué",
-          "body": "Tratamos los datos que nos facilitas en el formulario de presupuesto (nombre, email, empresa, teléfono y descripción del proyecto) con la única finalidad de responder a tu solicitud y, en su caso, preparar y enviarte una propuesta comercial."
+          "body": "Tratamos los datos que nos facilitas en el formulario de presupuesto (nombre, email, empresa, teléfono y descripción del proyecto) para responder a tu solicitud y, en su caso, preparar y enviarte una propuesta comercial. También tratamos la dirección IP y los datos técnicos de los registros del servidor para la seguridad, el diagnóstico de incidencias y el funcionamiento del sitio."
         },
         {
           "heading": "Base legal",
-          "body": "La base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD)."
+          "body": "Para el formulario, la base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD). Para los registros del servidor, la base legal es el interés legítimo en mantener el sitio seguro y operativo (art. 6.1.f del RGPD)."
         },
         {
           "heading": "Conservación",
-          "body": "Conservaremos tus datos durante el tiempo necesario para atender tu solicitud y, si llegamos a colaborar, durante la relación contractual y los plazos legales aplicables."
+          "body": "Si la solicitud no llega a un contrato, conservaremos tus datos durante 2 años. Si llegamos a colaborar, los conservaremos durante la relación contractual y los plazos legales aplicables. Los registros del servidor que incluyen la dirección IP se conservan durante 2 años."
         },
         {
           "heading": "Destinatarios",
-          "body": "No cedemos tus datos a terceros salvo obligación legal. Para el envío de emails utilizamos un proveedor (Resend) que actúa como encargado del tratamiento con garantías adecuadas."
+          "body": "No cedemos tus datos a terceros salvo obligación legal y no utilizamos herramientas de analítica. El alojamiento del sitio corre a cargo de IONOS, que actúa como encargado del tratamiento del servidor y de los registros con dirección IP. Para el envío de emails utilizamos Resend, que actúa como encargado del tratamiento. No transferimos datos fuera del Espacio Económico Europeo."
         },
         {
           "heading": "Tus derechos",
-          "body": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiéndonos. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
+          "body": "Puedes ejercer tus derechos de acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a {email}. También puedes presentar una reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)."
         }
       ]
     },

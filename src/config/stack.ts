@@ -9,8 +9,8 @@ export const STACK = {
     "Zod",
     "Framer Motion",
   ],
-  backend: ["Node.js", "Express", "APIs REST", "PHP", "SQL"],
-  cloud: ["Docker", "Nginx", "Google Cloud Run", "Vercel", "CI/CD"],
+  backend: ["Node.js", "Python", "Go", "Java", "PHP", "SQL", "Express", "APIs REST"],
+  cloud: ["Docker", "Nginx", "AWS", "Google Cloud Platform", "Cloudflare", "Vercel", "CI/CD"],
 } as const;
 
 export const MARQUEE_TECH = [

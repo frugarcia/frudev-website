@@ -3,6 +3,8 @@ import { z } from "zod";
 export const PROJECT_TYPES = [
   "management",
   "web",
+  "apps",
+  "ai",
   "apis",
   "automation",
   "cloud",

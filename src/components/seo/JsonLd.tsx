@@ -2,7 +2,16 @@ import { getTranslations } from "next-intl/server";
 import { EXPERIENCE_START_YEAR, siteConfig } from "@/config/site";
 import type { Locale } from "@/i18n/routing";
 
-const SERVICE_KEYS = ["management", "web", "apis", "automation", "cloud", "maintenance"] as const;
+const SERVICE_KEYS = [
+  "management",
+  "web",
+  "apps",
+  "ai",
+  "apis",
+  "automation",
+  "cloud",
+  "maintenance",
+] as const;
 
 export async function JsonLd({ locale }: { locale: Locale }) {
   const tMeta = await getTranslations({ locale, namespace: "meta" });
@@ -22,7 +31,13 @@ export async function JsonLd({ locale }: { locale: Locale }) {
         logo: `${siteConfig.url}/images/logo.svg`,
         foundingDate: String(EXPERIENCE_START_YEAR),
         sameAs: [siteConfig.links.github],
-        ...(siteConfig.email ? { email: siteConfig.email } : {}),
+        email: siteConfig.email,
+        vatID: siteConfig.legal.taxId,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: siteConfig.legal.address,
+          addressCountry: "ES",
+        },
       },
       {
         "@type": "ProfessionalService",
