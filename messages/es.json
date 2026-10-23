@@ -47,7 +47,8 @@
     "satisfaction": "código propiedad del cliente"
   },
   "clients": {
-    "label": "Empresas que confían en nosotros"
+    "label": "Empresas que confían en nosotros",
+    "heading": "Ya confían en nosotros"
   },
   "services": {
     "eyebrow": "Servicios",

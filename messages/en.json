@@ -47,7 +47,8 @@
     "satisfaction": "code owned by the client"
   },
   "clients": {
-    "label": "Companies that trust us"
+    "label": "Companies that trust us",
+    "heading": "They already trust us"
   },
   "services": {
     "eyebrow": "Services",

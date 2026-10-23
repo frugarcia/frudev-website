@@ -5,8 +5,11 @@ export async function Clients() {
   const t = await getTranslations("clients");
 
   return (
-    <section aria-label={t("label")} className="border-b border-border bg-surface/30">
-      <div className="overflow-hidden mask-fade-x py-8">
+    <section aria-labelledby="clients-heading" className="border-b border-border bg-surface/30">
+      <p id="clients-heading" className="px-4 pt-8 text-center text-sm font-medium text-muted">
+        {t("heading")}
+      </p>
+      <div className="overflow-hidden mask-fade-x pt-6 pb-8">
         <div className="flex w-max animate-marquee items-center gap-16 pr-16 hover:[animation-play-state:paused]">
           {CLIENTS.map((client) => (
             <img
