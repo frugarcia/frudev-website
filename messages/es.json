@@ -46,6 +46,9 @@
     "technologies": "tecnologías en producción",
     "satisfaction": "código propiedad del cliente"
   },
+  "clients": {
+    "label": "Empresas que confían en nosotros"
+  },
   "services": {
     "eyebrow": "Servicios",
     "title": "Todo lo que necesitas para digitalizar tu empresa",

@@ -46,6 +46,9 @@
     "technologies": "technologies in production",
     "satisfaction": "code owned by the client"
   },
+  "clients": {
+    "label": "Companies that trust us"
+  },
   "services": {
     "eyebrow": "Services",
     "title": "Everything you need to digitise your company",

@@ -1,5 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import type { Locale } from "@/i18n/routing";
+import { Clients } from "@/components/sections/Clients";
 import { Cta } from "@/components/sections/Cta";
 import { Faq } from "@/components/sections/Faq";
 import { Hero } from "@/components/sections/Hero";
@@ -21,6 +22,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <JsonLd locale={locale as Locale} />
       <Hero />
       <TrustBar />
+      <Clients />
       <Services />
       <Cta variant="afterServices" />
       <WhatWeBuild />
