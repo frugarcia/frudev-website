@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AnalyticsConsentReset } from "@/components/analytics/AnalyticsConsentReset";
 import { LEGAL_PAGES } from "@/config/navigation";
 import { siteConfig } from "@/config/site";
 import { Link } from "@/i18n/navigation";
@@ -77,6 +78,7 @@ export default async function LegalPage({ params }: { params: Params }) {
           </section>
         ))}
       </div>
+      {key === "cookies" && <AnalyticsConsentReset />}
     </article>
   );
 }

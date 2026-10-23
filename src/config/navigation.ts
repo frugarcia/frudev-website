@@ -10,9 +10,12 @@ export const SECTION_IDS = {
   quote: QUOTE_ANCHOR,
 } as const;
 
+export const PROJECTS_HREF = "/proyectos";
+
 export const NAV_ITEMS = [
   { key: "services", href: `/#${SECTION_IDS.services}` },
   { key: "build", href: `/#${SECTION_IDS.build}` },
+  { key: "projects", href: PROJECTS_HREF },
   { key: "process", href: `/#${SECTION_IDS.process}` },
   { key: "whyUs", href: `/#${SECTION_IDS.whyUs}` },
   { key: "stack", href: `/#${SECTION_IDS.stack}` },

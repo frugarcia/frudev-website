@@ -5,11 +5,11 @@ export type ClientLogo = {
   height: number;
 };
 
-/** Display height is 40px. Files are 80px tall for retina screens. */
+/** Most marks display at 40px. Files are 80px tall. Castaño and Occo are taller so the wordmark stays readable. */
 export const CLIENTS: ClientLogo[] = [
   { name: "10Code", src: "/images/clients/10code.webp", width: 150, height: 40 },
   { name: "Andaoliva", src: "/images/clients/andaoliva.webp", width: 183, height: 40 },
-  { name: "Castaño", src: "/images/clients/castano.webp", width: 40, height: 40 },
+  { name: "Castaño", src: "/images/clients/castano.webp", width: 64, height: 64 },
   { name: "CICA", src: "/images/clients/cica.webp", width: 212, height: 32 },
   { name: "Contesur", src: "/images/clients/contesur.webp", width: 132, height: 40 },
   { name: "Iberia", src: "/images/clients/iberia.webp", width: 180, height: 40 },
@@ -22,7 +22,7 @@ export const CLIENTS: ClientLogo[] = [
     width: 194,
     height: 40,
   },
-  { name: "Occo", src: "/images/clients/occo.webp", width: 53, height: 40 },
+  { name: "Occo", src: "/images/clients/occo.webp", width: 83, height: 64 },
   { name: "Ragrom", src: "/images/clients/ragrom.webp", width: 75, height: 40 },
   { name: "Trucksur", src: "/images/clients/trucksur.webp", width: 136, height: 40 },
   {

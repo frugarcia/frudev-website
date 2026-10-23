@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { AnalyticsConsent } from "@/components/analytics/AnalyticsConsent";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
@@ -93,6 +94,7 @@ export default async function LocaleLayout({
             <Header />
             <main id="main">{children}</main>
             <Footer />
+            <AnalyticsConsent />
           </SmoothScroll>
         </NextIntlClientProvider>
       </body>

@@ -7,6 +7,7 @@ import { localizedPath } from "@/lib/seo";
 export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     { path: "/", priority: 1, changeFrequency: "monthly" as const },
+    { path: "/proyectos", priority: 0.8, changeFrequency: "monthly" as const },
     ...LEGAL_PAGES.map((page) => ({
       path: page.href,
       priority: 0.3,

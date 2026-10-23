@@ -36,6 +36,7 @@ Ver [`.env.example`](.env.example). En Vercel hay que añadirlas en _Settings > 
 - `CONTACT_FROM_EMAIL`: remitente verificado en Resend. Por defecto `onboarding@resend.dev`, que solo entrega a la cuenta propietaria; el email de confirmación al cliente requiere un dominio verificado.
 - `NEXT_PUBLIC_SITE_URL`: URL pública para canonical, sitemap y Open Graph.
 - `NEXT_PUBLIC_CONTACT_EMAIL`: email de contacto público opcional (footer, legales, JSON-LD).
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID`: ID de medición de GA4 (`G-…`). Se hornea en el build. Sin él no hay franja de cookies ni script de Analytics. En Dokploy hay que marcarla como disponible durante el build.
 
 ## Contenido editable
 

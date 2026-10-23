@@ -6,23 +6,12 @@ import { getTranslations } from "next-intl/server";
 import { Resend } from "resend";
 import { siteConfig } from "@/config/site";
 import { routing, type Locale } from "@/i18n/routing";
+import { isRateLimited } from "@/lib/quote-rate-limit";
 import { quoteSchema, type QuoteData } from "@/lib/schemas";
 import { escapeHtml } from "@/lib/utils";
 
 export type SendQuoteResult =
   { ok: true; mocked?: boolean } | { ok: false; error: "validation" | "rate_limited" | "server" };
-
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
-const RATE_LIMIT_MAX = 5;
-const submissions = new Map<string, number[]>();
-
-function isRateLimited(key: string): boolean {
-  const now = Date.now();
-  const recent = (submissions.get(key) ?? []).filter((time) => now - time < RATE_LIMIT_WINDOW_MS);
-  recent.push(now);
-  submissions.set(key, recent);
-  return recent.length > RATE_LIMIT_MAX;
-}
 
 async function buildEmails(data: QuoteData, locale: Locale) {
   const tQuote = await getTranslations({ locale, namespace: "quote" });

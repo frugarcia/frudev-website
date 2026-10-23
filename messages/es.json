@@ -19,6 +19,7 @@
     "whyUs": "Por qué nosotros",
     "stack": "Tecnología",
     "faq": "FAQ",
+    "projects": "Proyectos",
     "cta": "Pide presupuesto"
   },
   "language": {
@@ -49,6 +50,41 @@
   "clients": {
     "label": "Empresas que confían en nosotros",
     "heading": "Ya confían en nosotros"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Tres encargos reales de frudev technologies: logística, hostelería y vehículos de ocasión.",
+    "intro": "El cliente, el problema, lo que construimos y lo que quedó funcionando.",
+    "back": "Volver al inicio",
+    "problem": "Problema",
+    "work": "Qué hicimos",
+    "result": "Resultado",
+    "ctaTitle": "El siguiente puede ser el tuyo",
+    "ctaBody": "Cuéntanos la operativa y te enviamos un presupuesto.",
+    "cta": "Pide presupuesto",
+    "cases": [
+      {
+        "client": "Iterway",
+        "sector": "Logística",
+        "problem": "Las cargas y el estado de cada envío se seguían entre hojas, correos y llamadas. Nadie tenía la operativa completa a la vista.",
+        "work": "Construimos la aplicación con la que el equipo registra pedidos, actualiza estados y ve el día a día de la carga.",
+        "result": "Iterway sigue su operativa desde un solo panel, y el código de esa aplicación es suyo."
+      },
+      {
+        "client": "Castaño",
+        "sector": "Hostelería",
+        "problem": "Reservas, sala y el ritmo del servicio no cabían en una herramienta genérica. El local trabaja de una forma que el software de estantería no contempla.",
+        "work": "Desarrollamos la aplicación de la operativa del restaurante: reservas, servicio y el panel del equipo.",
+        "result": "La sala se gestiona con un sistema hecho para ese servicio. Cuando cambia la forma de trabajar, el cambio se hace en su código."
+      },
+      {
+        "client": "Trucksur",
+        "sector": "Vehículos de ocasión",
+        "problem": "El stock había que publicarlo y buscarlo sin depender de un catálogo ajeno. Dar de alta un vehículo y retirarlo tenía que ser inmediato.",
+        "work": "Construimos el buscador de vehículos y el panel para publicar, actualizar y retirar el stock.",
+        "result": "Quien busca un vehículo lo encuentra en el catálogo de Trucksur, y el equipo lo mantiene sin un intermediario."
+      }
+    ]
   },
   "services": {
     "eyebrow": "Servicios",
@@ -381,6 +417,14 @@
     "rights": "© {year} frudev technologies. Todos los derechos reservados.",
     "madeWith": "Hecho con Next.js y mucho café."
   },
+  "analytics": {
+    "regionLabel": "Cookies de análisis",
+    "banner": "Usamos cookies de análisis de Google para medir las visitas. Solo se activan si aceptas.",
+    "policy": "Política de cookies",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "reset": "Cambiar mi elección"
+  },
   "legal": {
     "back": "Volver al inicio",
     "updated": "Última actualización: {date}",
@@ -422,15 +466,15 @@
         },
         {
           "heading": "Base legal",
-          "body": "Para el formulario, la base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD). Para los registros del servidor, la base legal es el interés legítimo en mantener el sitio seguro y operativo (art. 6.1.f del RGPD)."
+          "body": "Para el formulario, la base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD). Para los registros del servidor, la base legal es el interés legítimo en mantener el sitio seguro y operativo (art. 6.1.f del RGPD). Para la medición de visitas con Google Analytics 4, la base legal es tu consentimiento (art. 6.1.a del RGPD), que puedes retirar cuando quieras."
         },
         {
           "heading": "Conservación",
-          "body": "Si la solicitud no llega a un contrato, conservaremos tus datos durante 2 años. Si llegamos a colaborar, los conservaremos durante la relación contractual y los plazos legales aplicables. Los registros del servidor que incluyen la dirección IP se conservan durante 2 años."
+          "body": "Si la solicitud no llega a un contrato, conservaremos tus datos durante 2 años. Si llegamos a colaborar, los conservaremos durante la relación contractual y los plazos legales aplicables. Los registros del servidor que incluyen la dirección IP se conservan durante 2 años. Los datos de la medición aceptada se conservan durante el plazo configurado en la propiedad de Google Analytics 4."
         },
         {
           "heading": "Destinatarios",
-          "body": "No cedemos tus datos a terceros salvo obligación legal y no utilizamos herramientas de analítica. El alojamiento del sitio corre a cargo de IONOS, que actúa como encargado del tratamiento del servidor y de los registros con dirección IP. Para el envío de emails utilizamos Resend, que actúa como encargado del tratamiento. No transferimos datos fuera del Espacio Económico Europeo."
+          "body": "No cedemos tus datos a terceros salvo obligación legal. El alojamiento del sitio corre a cargo de IONOS, que actúa como encargado del tratamiento del servidor y de los registros con dirección IP. Para el envío de emails utilizamos Resend, que actúa como encargado del tratamiento. Si aceptas las cookies de análisis, medimos las visitas con Google Analytics 4 y Google actúa como encargado de esa medición. Esa medición se envía a Google LLC en Estados Unidos, al amparo del EU-US Data Privacy Framework."
         },
         {
           "heading": "Tus derechos",
@@ -443,19 +487,19 @@
       "sections": [
         {
           "heading": "Qué cookies utilizamos",
-          "body": "Este sitio web solo utiliza cookies técnicas imprescindibles para su funcionamiento, como la que recuerda el idioma que has elegido (NEXT_LOCALE). No utilizamos cookies de análisis, publicidad ni seguimiento de terceros."
+          "body": "Este sitio utiliza cookies técnicas imprescindibles: la que recuerda el idioma que has elegido (NEXT_LOCALE) y, si respondes a la franja de cookies, la que guarda tu elección (analytics_consent, durante 1 año). Si aceptas el análisis, Google Analytics 4 instala cookies de medición (_ga y _ga_*, hasta 2 años) para contar las visitas. No utilizamos cookies de publicidad."
         },
         {
           "heading": "Base legal",
-          "body": "Las cookies técnicas están exentas de consentimiento conforme al artículo 22.2 de la LSSI-CE, ya que son estrictamente necesarias para prestar el servicio que solicitas."
+          "body": "Las cookies técnicas están exentas de consentimiento conforme al artículo 22.2 de la LSSI-CE, ya que son estrictamente necesarias para prestar el servicio que solicitas o para recordar tu decisión. Las cookies de análisis solo se instalan si las aceptas."
         },
         {
           "heading": "Cómo desactivarlas",
-          "body": "Puedes eliminar o bloquear las cookies desde la configuración de tu navegador. Si lo haces, es posible que el sitio no recuerde tu preferencia de idioma."
+          "body": "Puedes eliminar o bloquear las cookies desde la configuración de tu navegador. Si lo haces, es posible que el sitio no recuerde tu preferencia de idioma ni tu elección sobre el análisis. También puedes cambiar esa elección en esta página."
         },
         {
           "heading": "Cambios en esta política",
-          "body": "Si en el futuro incorporamos otro tipo de cookies, actualizaremos esta política y solicitaremos tu consentimiento cuando sea necesario."
+          "body": "Si cambiamos las cookies que usamos, actualizaremos esta política."
         }
       ]
     }

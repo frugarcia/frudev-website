@@ -1,6 +1,7 @@
 # Dokploy: set the container port to 3000.
 # NEXT_PUBLIC_* values are baked in at build time. In Dokploy, mark
-# NEXT_PUBLIC_SITE_URL and NEXT_PUBLIC_CONTACT_EMAIL as available during the build.
+# NEXT_PUBLIC_SITE_URL, NEXT_PUBLIC_CONTACT_EMAIL and
+# NEXT_PUBLIC_GA_MEASUREMENT_ID as available during the build.
 # RESEND_API_KEY, CONTACT_TO_EMAIL and CONTACT_FROM_EMAIL are read at runtime.
 
 FROM node:22-alpine AS base
@@ -17,8 +18,10 @@ RUN pnpm install --frozen-lockfile
 COPY . .
 ARG NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ARG NEXT_PUBLIC_CONTACT_EMAIL=web@frudev.es
+ARG NEXT_PUBLIC_GA_MEASUREMENT_ID=
 ENV NEXT_PUBLIC_SITE_URL=$NEXT_PUBLIC_SITE_URL \
-    NEXT_PUBLIC_CONTACT_EMAIL=$NEXT_PUBLIC_CONTACT_EMAIL
+    NEXT_PUBLIC_CONTACT_EMAIL=$NEXT_PUBLIC_CONTACT_EMAIL \
+    NEXT_PUBLIC_GA_MEASUREMENT_ID=$NEXT_PUBLIC_GA_MEASUREMENT_ID
 RUN pnpm build
 
 FROM node:22-alpine AS runner

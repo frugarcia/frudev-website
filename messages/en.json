@@ -19,6 +19,7 @@
     "whyUs": "Why us",
     "stack": "Technology",
     "faq": "FAQ",
+    "projects": "Projects",
     "cta": "Get a quote"
   },
   "language": {
@@ -49,6 +50,41 @@
   "clients": {
     "label": "Companies that trust us",
     "heading": "They already trust us"
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Three real engagements from frudev technologies: logistics, hospitality, and used vehicles.",
+    "intro": "The client, the problem, what we built, and what stayed in production.",
+    "back": "Back to the homepage",
+    "problem": "Problem",
+    "work": "What we built",
+    "result": "Result",
+    "ctaTitle": "The next one can be yours",
+    "ctaBody": "Tell us how the operation works and we will send a quote.",
+    "cta": "Get a quote",
+    "cases": [
+      {
+        "client": "Iterway",
+        "sector": "Logistics",
+        "problem": "Loads and the status of each shipment were tracked across spreadsheets, email, and phone calls. Nobody had the whole operation in view.",
+        "work": "We built the application the team uses to record orders, update statuses, and see the day's loads.",
+        "result": "Iterway runs the operation from a single panel, and they own that application's code."
+      },
+      {
+        "client": "Castaño",
+        "sector": "Hospitality",
+        "problem": "Bookings, the floor, and the pace of service did not fit a generic tool. The venue works in a way off-the-shelf software does not cover.",
+        "work": "We built the application for the restaurant operation: bookings, service, and the team's panel.",
+        "result": "The floor runs on a system made for that service. When the way of working changes, the change is made in their code."
+      },
+      {
+        "client": "Trucksur",
+        "sector": "Used vehicles",
+        "problem": "The stock had to be published and searched without relying on someone else's catalog. Listing a vehicle and taking it down had to be immediate.",
+        "work": "We built the vehicle search and the panel to publish, update, and remove stock.",
+        "result": "Someone looking for a vehicle finds it in Trucksur's catalog, and the team maintains it without a middleman."
+      }
+    ]
   },
   "services": {
     "eyebrow": "Services",
@@ -381,6 +417,14 @@
     "rights": "© {year} frudev technologies. All rights reserved.",
     "madeWith": "Built with Next.js and plenty of coffee."
   },
+  "analytics": {
+    "regionLabel": "Analytics cookies",
+    "banner": "We use Google analytics cookies to measure visits. They only run if you accept.",
+    "policy": "Cookie policy",
+    "accept": "Accept",
+    "reject": "Reject",
+    "reset": "Change my choice"
+  },
   "legal": {
     "back": "Back to home",
     "updated": "Last updated: {date}",
@@ -422,15 +466,15 @@
         },
         {
           "heading": "Legal basis",
-          "body": "For the form, the legal basis is your consent, given by ticking the acceptance box, and taking pre-contractual steps at your request (Art. 6.1.a and 6.1.b GDPR). For the server logs, the legal basis is the legitimate interest in keeping the site secure and operational (Art. 6.1.f GDPR)."
+          "body": "For the form, the legal basis is your consent, given by ticking the acceptance box, and taking pre-contractual steps at your request (Art. 6.1.a and 6.1.b GDPR). For the server logs, the legal basis is the legitimate interest in keeping the site secure and operational (Art. 6.1.f GDPR). For measuring visits with Google Analytics 4, the legal basis is your consent (Art. 6.1.a GDPR), which you can withdraw at any time."
         },
         {
           "heading": "Retention",
-          "body": "If a request does not become a contract, we keep your data for 2 years. If we work together, we keep it for the duration of the contract and the applicable legal periods. Server logs that include the IP address are kept for 2 years."
+          "body": "If a request does not become a contract, we keep your data for 2 years. If we work together, we keep it for the duration of the contract and the applicable legal periods. Server logs that include the IP address are kept for 2 years. Data from accepted measurement is kept for the period configured in the Google Analytics 4 property."
         },
         {
           "heading": "Recipients",
-          "body": "We do not share your data with third parties unless legally required, and we do not use analytics tools. The site is hosted by IONOS, which acts as processor for the server and for logs that include the IP address. We use Resend as processor to send email. We do not transfer data outside the European Economic Area."
+          "body": "We do not share your data with third parties unless legally required. The site is hosted by IONOS, which acts as processor for the server and for logs that include the IP address. We use Resend as processor to send email. If you accept analytics cookies, we measure visits with Google Analytics 4 and Google acts as processor for that measurement. That measurement is sent to Google LLC in the United States under the EU-US Data Privacy Framework."
         },
         {
           "heading": "Your rights",
@@ -443,19 +487,19 @@
       "sections": [
         {
           "heading": "Which cookies we use",
-          "body": "This website only uses strictly necessary technical cookies, such as the one that remembers your chosen language (NEXT_LOCALE). We do not use analytics, advertising or third-party tracking cookies."
+          "body": "This site uses strictly necessary technical cookies: the one that remembers your chosen language (NEXT_LOCALE) and, if you answer the cookie bar, the one that stores your choice (analytics_consent, for 1 year). If you accept analytics, Google Analytics 4 sets measurement cookies (_ga and _ga_*, for up to 2 years) to count visits. We do not use advertising cookies."
         },
         {
           "heading": "Legal basis",
-          "body": "Technical cookies are exempt from consent under Article 22.2 of the LSSI-CE because they are strictly necessary to provide the service you request."
+          "body": "Technical cookies are exempt from consent under Article 22.2 of the LSSI-CE because they are strictly necessary to provide the service you request or to remember your decision. Analytics cookies are set only if you accept them."
         },
         {
           "heading": "How to disable them",
-          "body": "You can delete or block cookies in your browser settings. If you do, the site may not remember your language preference."
+          "body": "You can delete or block cookies in your browser settings. If you do, the site may not remember your language preference or your choice about analytics. You can also change that choice on this page."
         },
         {
           "heading": "Changes to this policy",
-          "body": "If we add other types of cookies in the future, we will update this policy and ask for your consent where required."
+          "body": "If we change the cookies we use, we will update this policy."
         }
       ]
     }
