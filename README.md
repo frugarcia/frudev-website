@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# frudev technologies
 
-## Getting Started
+Web corporativa bilingüe (ES/EN) de **frudev technologies**, orientada a captar clientes mediante un formulario de presupuesto multipaso.
 
-First, run the development server:
+## Stack
+
+- Next.js 15 (App Router), React 19 y TypeScript estricto
+- Tailwind CSS 4, primitivas Radix y `lucide-react`
+- `next-intl` para rutas `/es` y `/en`, metadatos y `hreflang` por idioma
+- `motion` para animaciones y `lenis` para scroll suave (desactivado en táctil y con `prefers-reduced-motion`)
+- `react-hook-form` + `zod` (esquema compartido cliente/servidor) y Server Action con Resend
+
+## Puesta en marcha
 
 ```bash
+npm install
+cp .env.example .env.local
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Script              | Descripción                        |
+| ------------------- | ---------------------------------- |
+| `npm run dev`       | Servidor de desarrollo (Turbopack) |
+| `npm run build`     | Build de producción                |
+| `npm run start`     | Servir el build                    |
+| `npm run lint`      | ESLint                             |
+| `npm run typecheck` | `tsc --noEmit`                     |
+| `npm run format`    | Prettier (con orden de clases)     |
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Variables de entorno
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Ver [`.env.example`](.env.example). En Vercel hay que añadirlas en _Settings > Environment Variables_.
 
-## Learn More
+- `RESEND_API_KEY`: sin ella el formulario funciona en modo mock y solo registra la solicitud en el log del servidor.
+- `CONTACT_TO_EMAIL`: buzón que recibe las solicitudes (obligatoria si hay API key).
+- `CONTACT_FROM_EMAIL`: remitente verificado en Resend. Por defecto `onboarding@resend.dev`, que solo entrega a la cuenta propietaria; el email de confirmación al cliente requiere un dominio verificado.
+- `NEXT_PUBLIC_SITE_URL`: URL pública para canonical, sitemap y Open Graph.
+- `NEXT_PUBLIC_CONTACT_EMAIL`: email de contacto público opcional (footer, legales, JSON-LD).
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID`: ID de medición de GA4 (`G-…`). Se hornea en el build. Sin él no hay franja de cookies ni script de Analytics. En Dokploy hay que marcarla como disponible durante el build.
 
-To learn more about Next.js, take a look at the following resources:
+## Contenido editable
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- `src/config/site.ts`: `EXPERIENCE_START_YEAR` (años de experiencia calculados), estadísticas de la barra de confianza, enlaces y datos legales (titular, NIF, dirección).
+- `src/config/stack.ts`: tecnologías mostradas.
+- `messages/es.json` y `messages/en.json`: todos los textos de la web.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estructura
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+src/
+  app/[locale]/          layout, home, legal/[slug], opengraph-image, not-found
+  app/sitemap.ts, robots.ts
+  actions/send-quote.ts  Server Action del formulario
+  components/layout/     Header, MobileMenu, Footer, LanguageSwitcher, Logo
+  components/sections/   Hero, TrustBar, Services, WhatWeBuild, Process, WhyUs, Stack, Faq, Cta, QuoteForm
+  components/motion/     Reveal, Stagger, Counter, SmoothScroll
+  components/ui/         Button, Card, Section, SectionHeading, Accordion
+  config/  i18n/  lib/
+messages/es.json, en.json
+```
