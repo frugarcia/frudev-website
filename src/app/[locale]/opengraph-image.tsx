@@ -31,7 +31,6 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
       }}
     >
       <div style={{ display: "flex" }}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={logoSrc} width={280} height={90} alt="" />
       </div>
       <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
