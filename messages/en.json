@@ -403,10 +403,13 @@
   "email": {
     "subject": "New quote request from {name}",
     "confirmationSubject": "We have received your request | frudev technologies",
+    "confirmationPreview": "We have received your project and will reply within 24 business hours.",
     "confirmationGreeting": "Hi {name},",
     "confirmationBody": "Thanks for telling us about your project. We are reviewing it and will reply within 24 business hours with the next steps.",
     "confirmationSummary": "Your request summary",
-    "confirmationSignature": "The frudev technologies team"
+    "confirmationSignature": "The frudev technologies team",
+    "notificationPreview": "New quote request from {name}.",
+    "localeLabel": "Language"
   },
   "footer": {
     "tagline": "Custom software, websites, hybrid apps and AI built with modern technology.",

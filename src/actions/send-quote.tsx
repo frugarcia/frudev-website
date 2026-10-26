@@ -1,14 +1,16 @@
 "use server";
 
+import { render } from "@react-email/render";
 import { headers } from "next/headers";
 import { hasLocale } from "next-intl";
 import { getTranslations } from "next-intl/server";
 import { Resend } from "resend";
 import { siteConfig } from "@/config/site";
+import QuoteConfirmation from "@/emails/quote-confirmation";
+import QuoteNotification from "@/emails/quote-notification";
 import { routing, type Locale } from "@/i18n/routing";
 import { isRateLimited } from "@/lib/quote-rate-limit";
 import { quoteSchema, type QuoteData } from "@/lib/schemas";
-import { escapeHtml } from "@/lib/utils";
 
 export type SendQuoteResult =
   { ok: true; mocked?: boolean } | { ok: false; error: "validation" | "rate_limited" | "server" };
@@ -17,39 +19,56 @@ async function buildEmails(data: QuoteData, locale: Locale) {
   const tQuote = await getTranslations({ locale, namespace: "quote" });
   const tEmail = await getTranslations({ locale, namespace: "email" });
 
-  const rows: Array<[string, string]> = [
-    [tQuote("steps.type"), data.projectTypes.map((type) => tQuote(`types.${type}`)).join(", ")],
-    [tQuote("budgetQuestion"), tQuote(`budgets.${data.budget}`)],
-    [tQuote("timelineQuestion"), tQuote(`timelines.${data.timeline}`)],
-    [tQuote("fields.name"), data.name],
-    [tQuote("fields.email"), data.email],
-    [tQuote("fields.company"), data.company || "-"],
-    [tQuote("fields.phone"), data.phone || "-"],
-    [tQuote("fields.message"), data.message],
+  const rows = [
+    {
+      label: tQuote("steps.type"),
+      value: data.projectTypes.map((type) => tQuote(`types.${type}`)).join(", "),
+    },
+    { label: tQuote("budgetQuestion"), value: tQuote(`budgets.${data.budget}`) },
+    { label: tQuote("timelineQuestion"), value: tQuote(`timelines.${data.timeline}`) },
+    { label: tQuote("fields.name"), value: data.name },
+    { label: tQuote("fields.email"), value: data.email },
+    { label: tQuote("fields.company"), value: data.company || "-" },
+    { label: tQuote("fields.phone"), value: data.phone || "-" },
+    { label: tQuote("fields.message"), value: data.message },
   ];
 
-  const text = rows.map(([label, value]) => `${label}: ${value}`).join("\n");
-  const tableHtml = `<table cellpadding="8" style="border-collapse:collapse;font-family:system-ui,sans-serif;font-size:14px">${rows
-    .map(
-      ([label, value]) =>
-        `<tr><td style="color:#64748b;vertical-align:top;white-space:nowrap"><strong>${escapeHtml(label)}</strong></td><td style="white-space:pre-wrap">${escapeHtml(value)}</td></tr>`,
-    )
-    .join("")}</table>`;
-
-  const internal = {
-    subject: tEmail("subject", { name: data.name }),
-    text: `${text}\n\nLocale: ${locale}`,
-    html: `${tableHtml}<p style="color:#94a3b8;font-size:12px">Locale: ${locale}</p>`,
+  const confirmationProps = {
+    locale,
+    preview: tEmail("confirmationPreview"),
+    greeting: tEmail("confirmationGreeting", { name: data.name }),
+    body: tEmail("confirmationBody"),
+    summaryTitle: tEmail("confirmationSummary"),
+    rows,
+    signature: tEmail("confirmationSignature"),
+  };
+  const notificationProps = {
+    locale,
+    preview: tEmail("notificationPreview", { name: data.name }),
+    rows,
+    localeLabel: tEmail("localeLabel"),
+    replyTo: data.email,
   };
 
-  const greeting = tEmail("confirmationGreeting", { name: data.name });
-  const confirmation = {
-    subject: tEmail("confirmationSubject"),
-    text: `${greeting}\n\n${tEmail("confirmationBody")}\n\n${tEmail("confirmationSummary")}:\n${text}\n\n${tEmail("confirmationSignature")}`,
-    html: `<div style="font-family:system-ui,sans-serif;font-size:15px;line-height:1.6;color:#0f172a"><p>${escapeHtml(greeting)}</p><p>${escapeHtml(tEmail("confirmationBody"))}</p><h3 style="margin-top:24px">${escapeHtml(tEmail("confirmationSummary"))}</h3>${tableHtml}<p style="margin-top:24px">${escapeHtml(tEmail("confirmationSignature"))}</p></div>`,
-  };
+  const [internalHtml, internalText, confirmationHtml, confirmationText] = await Promise.all([
+    render(<QuoteNotification {...notificationProps} />),
+    render(<QuoteNotification {...notificationProps} />, { plainText: true }),
+    render(<QuoteConfirmation {...confirmationProps} />),
+    render(<QuoteConfirmation {...confirmationProps} />, { plainText: true }),
+  ]);
 
-  return { internal, confirmation };
+  return {
+    internal: {
+      subject: tEmail("subject", { name: data.name }),
+      text: internalText,
+      html: internalHtml,
+    },
+    confirmation: {
+      subject: tEmail("confirmationSubject"),
+      text: confirmationText,
+      html: confirmationHtml,
+    },
+  };
 }
 
 export async function sendQuote(input: unknown, localeInput: string): Promise<SendQuoteResult> {

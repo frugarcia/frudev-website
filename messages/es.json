@@ -403,10 +403,13 @@
   "email": {
     "subject": "Nueva solicitud de presupuesto de {name}",
     "confirmationSubject": "Hemos recibido tu solicitud | frudev technologies",
+    "confirmationPreview": "Hemos recibido tu proyecto y te responderemos en menos de 24 horas laborables.",
     "confirmationGreeting": "Hola {name},",
     "confirmationBody": "Gracias por contarnos tu proyecto. Lo estamos revisando y te responderemos en menos de 24 horas laborables con los siguientes pasos.",
     "confirmationSummary": "Resumen de tu solicitud",
-    "confirmationSignature": "El equipo de frudev technologies"
+    "confirmationSignature": "El equipo de frudev technologies",
+    "notificationPreview": "Nueva solicitud de presupuesto de {name}.",
+    "localeLabel": "Idioma"
   },
   "footer": {
     "tagline": "Software a medida, webs, apps híbridas e IA con tecnología actual.",
