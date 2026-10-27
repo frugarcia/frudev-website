@@ -9,6 +9,7 @@ import { Header } from "@/components/layout/Header";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import { siteConfig } from "@/config/site";
 import { routing } from "@/i18n/routing";
+import { getMeasurementId } from "@/lib/analytics-consent";
 import { buildAlternates } from "@/lib/seo";
 import "../globals.css";
 
@@ -79,9 +80,20 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) notFound();
   setRequestLocale(locale);
   const t = await getTranslations("a11y");
+  const measurementId = process.env.NODE_ENV === "production" ? getMeasurementId() : null;
 
   return (
     <html lang={locale} className={`${geistSans.variable} ${geistMono.variable}`}>
+      {measurementId ? (
+        <head>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('consent','default',{ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',analytics_storage:/(?:^|; )analytics_consent=granted(?:;|$)/.test(document.cookie)?'granted':'denied',wait_for_update:500});gtag('js',new Date());gtag('config','${measurementId}');`,
+            }}
+          />
+          <script async src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} />
+        </head>
+      ) : null}
       <body className="min-h-dvh overflow-x-clip">
         <NextIntlClientProvider>
           <SmoothScroll>

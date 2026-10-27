@@ -422,7 +422,7 @@
   },
   "analytics": {
     "regionLabel": "Cookies de análisis",
-    "banner": "Usamos cookies de análisis de Google para medir las visitas. Solo se activan si aceptas.",
+    "banner": "Medimos las visitas con Google Analytics sin cookies de análisis. Si aceptas, Google puede guardar cookies para reconocer si vuelves.",
     "policy": "Política de cookies",
     "accept": "Aceptar",
     "reject": "Rechazar",
@@ -469,15 +469,15 @@
         },
         {
           "heading": "Base legal",
-          "body": "Para el formulario, la base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD). Para los registros del servidor, la base legal es el interés legítimo en mantener el sitio seguro y operativo (art. 6.1.f del RGPD). Para la medición de visitas con Google Analytics 4, la base legal es tu consentimiento (art. 6.1.a del RGPD), que puedes retirar cuando quieras."
+          "body": "Para el formulario, la base legal es tu consentimiento, otorgado al marcar la casilla de aceptación, y la aplicación de medidas precontractuales a petición tuya (art. 6.1.a y 6.1.b del RGPD). Para los registros del servidor, la base legal es el interés legítimo en mantener el sitio seguro y operativo (art. 6.1.f del RGPD). Para la medición de visitas con Google Analytics 4, la etiqueta se carga al entrar, sin cookies de análisis. Esas cookies solo se instalan si aceptas, con base en tu consentimiento (art. 6.1.a del RGPD), que puedes retirar cuando quieras."
         },
         {
           "heading": "Conservación",
-          "body": "Si la solicitud no llega a un contrato, conservaremos tus datos durante 2 años. Si llegamos a colaborar, los conservaremos durante la relación contractual y los plazos legales aplicables. Los registros del servidor que incluyen la dirección IP se conservan durante 2 años. Los datos de la medición aceptada se conservan durante el plazo configurado en la propiedad de Google Analytics 4."
+          "body": "Si la solicitud no llega a un contrato, conservaremos tus datos durante 2 años. Si llegamos a colaborar, los conservaremos durante la relación contractual y los plazos legales aplicables. Los registros del servidor que incluyen la dirección IP se conservan durante 2 años. Los datos de la medición se conservan durante el plazo configurado en la propiedad de Google Analytics 4."
         },
         {
           "heading": "Destinatarios",
-          "body": "No cedemos tus datos a terceros salvo obligación legal. El alojamiento del sitio corre a cargo de IONOS, que actúa como encargado del tratamiento del servidor y de los registros con dirección IP. Para el envío de emails utilizamos Resend, que actúa como encargado del tratamiento. Si aceptas las cookies de análisis, medimos las visitas con Google Analytics 4 y Google actúa como encargado de esa medición. Esa medición se envía a Google LLC en Estados Unidos, al amparo del EU-US Data Privacy Framework."
+          "body": "No cedemos tus datos a terceros salvo obligación legal. El alojamiento del sitio corre a cargo de IONOS, que actúa como encargado del tratamiento del servidor y de los registros con dirección IP. Para el envío de emails utilizamos Resend, que actúa como encargado del tratamiento. Medimos las visitas con Google Analytics 4 y Google actúa como encargado de esa medición. Las cookies de análisis solo se instalan si las aceptas. Esa medición se envía a Google LLC en Estados Unidos, al amparo del EU-US Data Privacy Framework."
         },
         {
           "heading": "Tus derechos",
@@ -490,11 +490,11 @@
       "sections": [
         {
           "heading": "Qué cookies utilizamos",
-          "body": "Este sitio utiliza cookies técnicas imprescindibles: la que recuerda el idioma que has elegido (NEXT_LOCALE) y, si respondes a la franja de cookies, la que guarda tu elección (analytics_consent, durante 1 año). Si aceptas el análisis, Google Analytics 4 instala cookies de medición (_ga y _ga_*, hasta 2 años) para contar las visitas. No utilizamos cookies de publicidad."
+          "body": "Este sitio utiliza cookies técnicas imprescindibles: la que recuerda el idioma que has elegido (NEXT_LOCALE) y, si respondes a la franja de cookies, la que guarda tu elección (analytics_consent, durante 1 año). Si aceptas el análisis, Google Analytics 4 instala cookies de medición (_ga y _ga_*, hasta 2 años) para reconocer visitas repetidas. Hasta entonces la etiqueta se carga sin esas cookies. No utilizamos cookies de publicidad."
         },
         {
           "heading": "Base legal",
-          "body": "Las cookies técnicas están exentas de consentimiento conforme al artículo 22.2 de la LSSI-CE, ya que son estrictamente necesarias para prestar el servicio que solicitas o para recordar tu decisión. Las cookies de análisis solo se instalan si las aceptas."
+          "body": "Las cookies técnicas están exentas de consentimiento conforme al artículo 22.2 de la LSSI-CE, ya que son estrictamente necesarias para prestar el servicio que solicitas o para recordar tu decisión. Las cookies de análisis solo se instalan si las aceptas. Antes de esa aceptación, Google Analytics recibe la visita sin instalarlas."
         },
         {
           "heading": "Cómo desactivarlas",

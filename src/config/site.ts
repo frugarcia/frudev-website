@@ -14,7 +14,7 @@ export const siteConfig = {
     taxId: "B13638200",
     address: "Ctra. Isla Menor, n.º 31, 41703 Dos Hermanas (Sevilla)",
     registry: "Registro Mercantil de Sevilla, tomo 7387, folio 219, hoja SE-138902, inscripción 1",
-    updatedAt: "2026-10-23",
+    updatedAt: "2026-10-27",
   },
   stats: {
     projects: 60,
